@@ -1,0 +1,2907 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title> ÇÇµå ´õ Å©¶óÄË º¸µå°ÔÀÓ | º¸µå¶óÀÌÇÁ </title>
+<!-- <title> { {BOARD.bbs_title}} {{site_name} } </title> -->
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+<meta name="Generator" content="EditPlus">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="º¸µå¶óÀÌÇÁ">
+<meta name="Keywords" content="º¸µå°ÔÀÓ boardgame">
+<meta name="Description" content="°ÔÀÓ Á¤º¸,ÇÃ·¹ÀÌÅ¸ÀÓ,»ç¿ë¿¬·É,³­ÀÌµµ,ÃßÃµÀÎ¿ø,°ÔÀÓÆò,ÀÚ·á½Ç,À¯»ç°ÔÀÓ,Ä¿¹Â´ÏÆ¼">
+
+<meta property="og:title" content="º¸µå°ÔÀÓ Ä¿¹Â´ÏÆ¼ º¸µå¶óÀÌÇÁ">
+<meta property="og:url" content="https://www.boarldife.co.kr/">
+<meta property="og:image" content="https://www.boardlife.co.kr/img/boardlife_m.png">
+<meta property="og:description" content="°ÔÀÓ Á¤º¸,ÇÃ·¹ÀÌÅ¸ÀÓ,»ç¿ë¿¬·É,³­ÀÌµµ,ÃßÃµÀÎ¿ø,°ÔÀÓÆò,ÀÚ·á½Ç,À¯»ç°ÔÀÓ,Ä¿¹Â´ÏÆ¼">
+<meta property="og:locale" content="ko_KR">
+
+<!-- ½ºÅ¸ÀÏ½ÃÆ® ÆÄÀÏ ¸µÅ©Ã³¸® -->
+<link rel="stylesheet" href="editor/happy_module/html5_image_upload/css/upload_tool_bora.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/styleNew.css?v=2023_08_05_24_50">
+<link rel="stylesheet" type="text/css" href="css/svg.css?v=2023_08_05_24_50">
+<!-- <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" /> -->
+<link rel="shortcut icon" type="image/x-icon" href="../game/logo.ico">
+
+<!-- ÀÚ¹Ù½ºÅ©¸³Æ® ÆÄÀÏ ¸µÅ©Ã³¸® -->
+<script language="javascript" src="js/jquery-1.12.4.min.js" type="text/javascript" ></script>
+<script language="javascript" src="js/datepicker.min.js" type="text/javascript"></script>
+<script language="javascript" src="js/datepicker.ko.js" type="text/javascript"></script>
+
+<!-- <script>
+	if(typeof(history.pushState) == 'function'){
+		var loadURL = location.href;
+		loadURL = loadURL.replace(/\?load=([0-9]+)/ig,'');
+		history.pushState(null, null, loadURL);
+
+		var collectURL = location.href;
+		collectURL = collectURL.replace(/\?collect=([0-9]+)/ig,'');
+		history.pushState(null, null, collectURL);
+	}
+</script> -->
+
+<!-- Åë°èÆ®·¡Å· -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GZQ6S49J9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GZQ6S49J9');
+</script>
+<!-- google adsence -->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4408063067096338"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id='top-alert'>ÀúÀåÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.</div>
+<div style='display:none' id="user_on"></div>
+<div class='boardlife_new_top_wrapper'>
+	
+	<div class='boardlife_new_top'>
+		<div class='boardlife_new_top-row-1'>
+			<div class='boardlife_new_top-row-left-1'><div class='me-4' id='main-logo'><a href='./'></a></div></div>
+			<div class='boardlife_new_top-row-center-1'>
+				<div class="dropdown view-game-wrapper">
+					<button class="dropdown-toggle shadow-none selected-game-div" id="select-game" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+						<div id="now-game-thumb" class="selected-game-div-thumb me-2"></div>
+						<div id="now-game-title" class="selected-game-div-title ellip me-4">ÃÖ±Ù º» °ÔÀÓÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+					</button>
+					<ul id='view-game-list-div' class="view-game-list dropdown-menu scroll-var" aria-labelledby="select-game">
+					  <li>
+						  <div class='box-svg' id='no-view-boardgame-list'></div>
+						  <div id='no-view-boardgame-text'>ÃÖ±Ù º» °ÔÀÓÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+					  </li>
+					</ul>
+				</div>
+				<div class="input-group dropdown">
+					<button class="btn btn-sm dropdown-toggle shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">º¸µå°ÔÀÓ</button>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="javascript:void(0)">º¸µå°ÔÀÓ</a></li>
+					  <!-- <li><a class="dropdown-item" href="javascript:void(0)">µðÀÚÀÌ³Ê</a></li>
+					  <li><a class="dropdown-item" href="javascript:void(0)">¾ÆÆ®¿÷ÀÛ°¡</a></li>
+					  <li><a class="dropdown-item" href="javascript:void(0)">ÆÛºí¸®¼Å</a></li>
+					  <li><a class="dropdown-item" href="javascript:void(0)">Å×¸¶</a></li>
+					  <li><a class="dropdown-item" href="javascript:void(0)">ÁøÇà¹æ½Ä</a></li>
+					  <li><a class="dropdown-item" href="javascript:void(0)">Ä¿¹Â´ÏÆ¼</a></li> -->
+					</ul>
+					<input type="text" id='auto-search-input' class="form-control shadow-none" aria-label="" autocomplete="off" onfocusin="showAutosearch(this.value);" onkeyup="enterkey(this.value);">
+					<div id='auto-search-wraaper-id' class='auto-search-wraaper' aria-expanded="false">
+						<div id='auto-search-div' class='auto-search'></div>
+					</div>
+				  </div>
+				  
+			</div>
+			<div class='boardlife_new_top-row-right-1'>
+				<div class="dropdown">
+					<div class="dropdown-toggle" id="init-site" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<div class='gear-svg me-2'></div>
+						<div class='init-site-text'>¼³Á¤</div>
+					</div>
+					<ul class="dropdown-menu dropdown-menu-end init-site-ul" aria-labelledby="init-site">
+						<li class="form-check-label init-dark-wrapper" for="flexSwitchCheckDefault" onclick='themeChange()'>
+							<div id='themechange-toggle'></div>
+							<div class="form-check form-switch init-dark-div">
+								<div class='init-dark-div-front'><div class='moon-svg me-2'></div><div>´ÙÅ©¸ðµå</div></div>
+								<div class='init-dark-div-end'>
+									<input class="form-check-input shadow-none" id='init-dark' type="checkbox" role="switch">
+								</div>
+							</div>
+						</li>
+					  	<!-- <li class="form-check-label init-dark-wrapper" for="flexSwitchCheckDefault">
+							<div id='themechange-toggle'></div>
+							<div class="form-check form-switch init-dark-div">
+								<div class='init-dark-div-front'><div class='moon-svg me-2'></div><div>´ÙÅ©¸ðµå ¼­ºñ½º ¿¹Á¤</div></div>
+								<div class='init-dark-div-end'>
+									<input class="form-check-input shadow-none" id='init-dark' type="checkbox" role="switch">
+								</div>
+							</div>
+						</li> -->
+						
+					</ul>
+				  </div>
+			</div>
+		</div>
+		<div class='boardlife_new_top-row-2'>
+			<div class='boardlife_new_top-row-left-2'>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-01">
+					°ÔÀÓÁ¤º¸
+					</div>
+					<!-- lib_blog boardlife_new_icon -->
+					<div class="dropdown-menu" aria-labelledby="top-01">
+						<div>
+							<ul>
+								<li><a class="dropdown-item" href="rank.php">°ÔÀÓ¼øÀ§</a></li>
+								<li><a class="dropdown-item" href="trend.php">Æ®·»µå50<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="udata.php?page=rate">°ÔÀÓÆò<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="udata.php?page=play">PLAY<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="udata.php?page=brief">ÇÑÁÙÆò<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="trend.php?page=kor">ÇÑ±ÛÆÇ ¿¹Á¤</a></li>
+							</ul>
+							<ul>
+								<li><a class="dropdown-item" href="storage.php?type=type">Ä«Å×°í¸®</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=category">Å×¸¶</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=mechanisms">ÁøÇà¹æ½Ä</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=designer">µðÀÚÀÌ³Ê</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=artist">¾ÆÆ®¿÷ ÀÛ°¡</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=publishers">ÃâÆÇ»ç</a></li>
+								<li><a class="dropdown-item" href="storage.php?type=groups">±×·ì</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-02">
+					°ÔÀÓÈÄ±â
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="top-02">
+					<li><a class="dropdown-item" href="bbs_list.php?tb=community_post">ÃÖ½Å±Û<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="bbs_list.php?tb=community_post&b_category=¸®ºä">¸®ºä<div class='svg-new-icon'></div></a></li> 
+					<li><a class="dropdown-item" href="bbs_list.php?tb=community_post&b_category=ÇÁ¸®ºä">ÇÁ¸®ºä</a></li> 
+					<li><a class="dropdown-item" href="bbs_list.php?tb=community_post&b_category=¸ðÀÓÈÄ±â">¸ðÀÓÈÄ±â<div class='svg-new-icon'></div></a></li>  
+					<li><a class="dropdown-item" href="bbs_list.php?tb=community_post&b_category=°£´ÜÈÄ±â">°£´ÜÈÄ±â<div class='svg-new-icon'></div></a></li>
+					<!-- <li><a class="dropdown-item" href="post.php">ÃÖ½Å±Û{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ} }</a></li>
+					<li><a class="dropdown-item" href="post.php?page=review">¸®ºä{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ,¸®ºä} }</a></li> 
+					<li><a class="dropdown-item" href="post.php?page=prereview">ÇÁ¸®ºä{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ,ÇÁ¸®ºä} }</a></li> 
+					<li><a class="dropdown-item" href="post.php?page=meet">¸ðÀÓÈÄ±â{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ,¸ðÀÓÈÄ±â} }</a></li>  
+					<li><a class="dropdown-item" href="post.php?page=simple">°£´ÜÈÄ±â{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ,°£´ÜÈÄ±â} }</a></li> -->
+					</ul>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-03">
+					BTV
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="top-03">
+						<li><a class="dropdown-item" href="video.php">ÃÖ½Å±Û<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="video.php?page=rule">±ÔÄ¢¼³¸í<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="video.php?page=play">ÇÃ·¹ÀÌ<div class='svg-new-icon'></div></a></li> 
+					<li><a class="dropdown-item" href="video.php?page=story">ÀÌ¾ß±â<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="video.php?page=unboxing">°³ºÀ¿µ»ó<div class='svg-new-icon'></div></a></li>  
+					<li><a class="dropdown-item" href="video.php?page=review">¸®ºä<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="video.php?page=knowhow">³ëÇÏ¿ì</a></li>
+					<li><a class="dropdown-item" href="video.php?page=etc">±âÅ¸<div class='svg-new-icon'></div></a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-04">
+					°Ô½ÃÆÇ
+					</div>
+					<div class="dropdown-menu" aria-labelledby="top-04">
+						<div class="top-board">
+							<ul>
+								<li><a class="dropdown-item" href="community.php">ÀüÃ¼ °Ô½ÃÆÇ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_community">ÀÚÀ¯°Ô½ÃÆÇ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_news">À¯Àú¼Ò½Ä<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=info_files">ÀÚ·á½Ç<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=info_boardgame">±¸¼ºÁ¤º¸<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=meet_calendar">¸ðÀÓÀÏÁ¤<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=community_meet">Á¤±â¸ðÀÓ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item  new-service-a" href="bbs_list.php?tb=community_meet_oversea"><div class="new-service-icon">½Å±Ô</div>ÇØ¿Ü¸ðÀÓ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_general">°ü·ÃÁ¤º¸<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_cafe">º¸µåÄ«Æä</a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_con">Çà»ç<div class='svg-new-icon'></div></a></li>
+							</ul>
+							<ul>
+								<!-- <li><a class="dropdown-item" href="post.php">°ÔÀÓÈÄ±â{{º¸¶ó°Ô½ÃÆÇ»õ±Û¾ÆÀÌÄÜ °ÔÀÓÈÄ±â,3ÀÏ} }</a></li> -->
+								<li><a class="dropdown-item" href="bbs_list.php?tb=community_post">°ÔÀÓÈÄ±â<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="video.php">BTV<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=community_qna">¹®ÀÇ°Ô½ÃÆÇ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=info_gallery">°ø¹æ °¶·¯¸®<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_knowhow">³ëÇÏ¿ì<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_discuss">¼³¹®</a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_pc">APP-PC</a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_design">º¸µå°ÔÀÓ Ã¢ÀÛ<div class='svg-new-icon'></div></a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=board_job2">±¸ÀÎ±¸Á÷</a></li>
+								<li><a class="dropdown-item" href="bbs_list.php?tb=pod_cast">ÆÌÄ³½ºÆ®</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-06">
+					Áß°í
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="top-06">
+						<li><a class="dropdown-item" href="bbs_list.php?tb=board_used">ÀüÃ¼<div class='svg-new-icon'></div></a></li>
+						<li><a class="dropdown-item" href="bbs_list.php?tb=board_used&b_category=ÆÇ¸Å">ÆÇ¸Å<div class='svg-new-icon'></div></a></li>
+						<li><a class="dropdown-item" href="bbs_list.php?tb=board_used&b_category=±¸¸Å">±¸¸Å<div class='svg-new-icon'></div></a></li>
+						<li><a class="dropdown-item" href="bbs_list.php?tb=board_used&b_category=±³È¯">±³È¯<div class='svg-new-icon'></div></a></li>
+						<li><a class="dropdown-item" href="bbs_list.php?tb=board_used&b_category=³ª´®">³ª´®<div class='svg-new-icon'></div></a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-05">
+					¼îÇÎ
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="top-05">
+						<li><a class="dropdown-item" href="https://inno.boardlife.co.kr/">ÀÌ³ë<div class='svg-new-icon'></div></a></li>
+						<li><a class="dropdown-item" href="https://shopping.boardlife.co.kr/">ºñ¸¶ÄÏ</a></li>
+						<li><a class="dropdown-item" href="trend.php?page=fund">¼±ÁÖ¹® ¹× ÆÝµù</a></li>
+						<li><a class="dropdown-item" href="bbs_list.php?tb=ad_board">±¸¸ÅÁ¤º¸ °Ô½ÃÆÇ<div class='svg-new-icon'></div></a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-toggle menu" id="top-07">
+					µ¥ÀÌÅÍ
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="top-07">
+					<li><a class="dropdown-item pointer" onclick="userOnly('game_edit.php?mode=reg')">°ÔÀÓ µî·Ï</a></li>
+					<li><a class="dropdown-item" href="game_edit.php?mode=list">°ÔÀÓ µî·Ï ¸®½ºÆ®<div class='svg-new-icon'></div></a></li>
+					<li><a class="dropdown-item" href="game_edit.php?mode=guide">µµ¿ò¸»</a></li>
+					<!-- <li><a class="dropdown-item" href="game_edit.php?mode=kor">ÇÑ±ÛÆÇ Ãâ½Ã ¿¹Á¤</a></li>
+					<li><a class="dropdown-item" href="game_edit.php?mode=fund">¼±ÁÖ¹® & ÆÝµù</a></li> -->
+					</ul>
+				</div>
+				
+			</div>
+			<div class='boardlife-new-top-row-right-2'>
+				<SCRIPT language="JavaScript">
+
+	function CheckForm(theForm)
+	{
+		var name_title	= new Array("È¸¿ø¾ÆÀÌµð¸¦", "È¸¿øºñ¹Ð¹øÈ£¸¦");
+		var name_name	= new Array("member_id", "member_pass");
+
+		for(var i in name_name)
+		{
+			if (document.getElementById(name_name[i]).value == "")
+			{
+				alert(name_title[i] + " ÀÔ·ÂÇÏ¼¼¿ä.");
+				document.getElementById(name_name[i]).focus();
+				return false;
+			}
+		}
+	}
+
+	function happy_member_autologin()
+	{
+		if ( document.happy_member_login_form.save_login.checked == true )
+		{
+			var check;
+			check = confirm("¾ÆÀÌµðÀúÀå ±â´ÉÀ» »ç¿ëÇÏ½Ã°Ú½À´Ï±î?\n\n¾ÆÀÌµð°¡ ÀúÀåµÇ¹Ç·Î À¯ÀÇÇÏ¼¼¿ä  \n\n°ø°øÀå¼Ò¿¡¼­ »ç¿ë½Ã ÁÖÀÇ¿ä¸Á");
+			if( check == false )
+			{
+				document.happy_member_login_form.save_login.checked = false;
+				document.happy_member_login_form.save_id.value = 'n';
+			}
+			else if ( check == true )
+			{
+				document.happy_member_login_form.save_id.value = 'y';
+			}
+
+		}
+		else
+		{
+			document.happy_member_login_form.save_id.value = 'n';
+		}
+	}
+
+	function changeIMG(num)
+	{
+		if (num == 1)
+		{
+			document.happy_member_login_form.member_id.style.backgroundImage="";
+		}
+		else if (num == 2)
+		{
+			document.happy_member_login_form.member_pass.style.backgroundImage="";
+		}
+	}
+</SCRIPT>
+<a href='happy_member.php?mode=joinus' id='member-join' class='login-btn me-2'>È¸¿ø°¡ÀÔ</a>
+<div id='member-login' class='login-btn' id="login" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">·Î±×ÀÎ</div>
+<div class="dropdown-menu dropdown-menu-end member-login-wrapper" aria-labelledby="login">
+	<div id='sns_login_div'>
+		<form action="./happy_member_login.php?mode=login_reg" method="post" name="happy_member_login_form" onSubmit="return CheckForm(this)">
+			<input type="hidden" name="returnUrl" value="./">
+			<input type='hidden' name='save_id' value="" />
+			
+			<div class='member-login-div'>
+				<div class='member-login-find'>
+					<a href="happy_member.php?mode=lostid">¾ÆÀÌµð</a>
+					<div>/</div>
+					<a href="happy_member.php?mode=lostpass">ºñ¹Ð¹øÈ£Ã£±â</a>
+				</div>
+				<div class='member-login-input-wrapper'>
+					<div class='member-login-input boardlife-login-input'>
+						<div><input name="member_id" id="member_id" type="text" maxlength="30" value="" TabIndex="1" alt="¾ÆÀÌµð" title="¾ÆÀÌµð" placeholder="¾ÆÀÌµð" ></div>
+						<div><input name="member_pass" id="member_pass" type="password" maxlength="30" value=""  TabIndex="2" alt="ºñ¹Ð¹øÈ£"  placeholder="ºñ¹Ð¹øÈ£" title="ºñ¹Ð¹øÈ£"></div>
+					</div>
+					<div class='member-login-submit'>
+						<input type="submit" value="·Î±×ÀÎ" />
+						<!-- <input type="image" name="formimage1" src="../title/log_btn.png" tabIndex="3"  alt="·Î±×ÀÎ" title="·Î±×ÀÎ"> -->
+					</div>
+				</div>
+				<div>
+					<div><label for="auto_login_use" alt="·Î±×ÀÎ »óÅÂ À¯Áö" title="·Î±×ÀÎ »óÅÂ À¯Áö" style="cursor:pointer;"><input type="checkbox" name="auto_login_use" id="auto_login_use" value="y" alt="·Î±×ÀÎ »óÅÂ À¯Áö" title="·Î±×ÀÎ »óÅÂ À¯Áö" TabIndex="4" onClick="happy_member_auto_login_use(this)"> <span style=" font:11px 'µ¸¿ò'; ">·Î±×ÀÎ »óÅÂ À¯Áö</span></label></div>
+					<!-- <div><input type="checkbox" name="save" onclick="happy_member_autologin()" id="save_login" value="{ {save_id}}" { {save_id_check}} alt="¾ÆÀÌµðÀúÀå" title="¾ÆÀÌµðÀúÀå" TabIndex="5">&nbsp;<label for="save_login" alt="¾ÆÀÌµðÀúÀå" title="¾ÆÀÌµðÀúÀå" style="cursor:pointer;"><span style=" font:11px 'µ¸¿ò';"> ID¸¦ ÀúÀåÇÕ´Ï´Ù</span></label></div> -->
+				</div>
+				<div class='member-login-input social-div'>
+					<script language="javascript" src="js/sns_login.js"></script>
+					<div class='social-login-btn social-login-facebook mb-2' onClick="sns_login_call('facebook', 'freerhkr', '16947925234593');"><div class='facebook-svg'></div>ÆäÀÌ½ººÏ ·Î±×ÀÎ</div>
+					<div class='social-login-btn social-login-google' onClick="sns_login_call('google', 'freerhkr', '16947925234593');"><div class='google-svg'></div>±¸±Û ·Î±×ÀÎ</div>
+					<div id='sns_login_div'></div>
+				</div>
+			</div>
+		
+		</form>
+	</div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('auto-search-input').addEventListener("keyup", makedelay(function(e){
+		var code = (e.keyCode || e.which);
+		if(code == 37 || code == 39 || code == 40 || code == 38 || code == 16 || code == 17 || code == 18 || code == 21) {
+			return;
+		}
+		autoSearch(this.value);
+		}, 500));
+		this.value, code = null;
+		
+		function makedelay(callback, ms) {
+		var timer = 0;
+
+		try{
+			return returnTime = function() {
+				var context = this, args = arguments;
+				clearTimeout(timer);
+				timer = setTimeout(function () {
+				callback.apply(context, args);
+				}, ms || 0);
+			};
+		}
+		finally{
+			returnTime, timer = null;
+		}
+	}
+</script>
+
+	<div id="div-wrapper">
+		<!-- <div class='contents-wrapper'>
+			<div class='google-ad' style="margin:10px 0 20px">
+				728-90-boardlife
+				
+			</div>
+		</div> -->
+		<div class='contents-wrapper'>
+            <div class='mt-2 mb-3 google-ad'>
+                
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4408063067096338"
+		crossorigin="anonymous"></script>
+		<!-- Ä¿¹Â´ÏÆ¼-Å¾ -->
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:1280px;height:140px"
+			data-ad-client="ca-pub-4408063067096338"
+			data-ad-slot="8801479248"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	
+			</div>
+        </div>
+		<div class='div-contents'>
+			<div class='div-contents-wrapper'>
+<!-- {{ÄÁÅÙÃ÷È«º¸} } -->
+<div class="wing-wrapper left"><a href='start.php' style='background-image:url(webp/global-boost-wing-left.webp)'></a></div>
+<div class="wing-wrapper right">
+		<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+		<script>
+		Kakao.init("837b58338cc3d1e89263272ef71dbd96");
+		</script>
+		<a href="javascript:addChannel()" style="background-image:url(webp/global-boost-wing-right.webp)"></a>
+		<script>
+							//Ä«Ä«¿À Ä£±¸ Ãß°¡
+							function addChannel() {
+								Kakao.Channel.addChannel({
+									channelPublicId: "_xatpXT",
+								});
+							}
+						</script>
+		</div>
+<div class='div-contents'>
+    <!-- {{°ÔÀÓÆäÀÌÁö¾÷µ¥ÀÌÆ®°øÁö} } -->
+    <div class='display-none' id='game_thumb_view'>wys2/swf_upload/2023/03/02/1677692092753692_lg_N_30x30_100_5_.jpg</div>
+    <div class='game-detail-title-wrapper' style='background-image:url()'>
+        <div class="community-left-rank-wrapper">
+            <div class="community-left-rank">
+                <div class="title">
+                    ½Ç½Ã°£ º£½ºÆ®
+                </div>
+                <div class="community-left-rank-list"></div>
+            </div>
+        </div>
+        <div class='game-detail-wrapper-gradient'>
+            <div class='game-detail-title flex'>
+                <div class='game-thumb'>
+                    <a class='game-thumb-link' href='board_file_img_view.php?file_name=wys2/swf_upload/2023/03/02/1677692092753692_lg.jpg' target='_blank'><img src='wys2/swf_upload/2023/03/02/1677692092753692_lg_N_170x170_100_5_.jpg' /></a>
+                    <div class="kor-version">ÇÑ±ÛÆÇ</div>
+                    <a href="javascript:alertBox('·Î±×ÀÎ ½Ã ÇÑ±ÛÆÇ ¹ß¸Å ½ÅÃ»ÀÌ °¡´ÉÇÕ´Ï´Ù.', '', 2000)" class='want-kor-btn'><div class='letter-k-svg me-1'></div><div>ÇÑ±ÛÆÇ¹ß¸Å ¿øÇØ¿ä</div></a>
+                </div>
+                <div class='game-data-box flex-1'>
+                    <div class='game-data-box-title flex'>
+                        <div class='flex flex-1'>
+                            <div class='me-4 flex-div'><div class='trophy-svg me-2'></div>Á¾ÇÕ¼øÀ§: <span id='total_rank'>2024</span></div>
+                            
+                            
+                            
+                            
+                            <!-- <div>°ü·Ã°ÔÀÓ: <span id="rel_game"></span></div> -->
+                        </div>
+                        <div class='edit-btn flex'>
+                            <!-- <div><a href='#'>°øÀ¯</a></div> -->
+                            <!-- <div><a href='game_edit.php?mode=edit&bbs_num=13704'>»çÁø</a></div>
+                            <div><a href='game_edit.php?mode=edit&bbs_num=13704'>¼öÁ¤</a></div> -->
+                            <div class='edit-btn-sub'><a class='game-edit-btn pointer' onclick='savefinish("","È¸¿øÀü¿ë ¼­ºñ½ºÀÔ´Ï´Ù.");'><div class='camera-svg me-2'></div>»çÁø</a></div>
+                            <div class='edit-btn-sub'><a class='game-edit-btn' href="game_edit.php?mode=edit&bbs_num=13704">¼öÁ¤</a></div>
+                            <div class='edit-btn-sub'></div>
+                            <!-- <div></div> -->
+                        </div>
+                    </div>
+                    <div class='flex mt-3 pb-3 game-rate-div'>
+                        <div class='game-rate-wrapper'>
+                            <div id='game-rate-circle' class='rate-grade-6'>6.7</div>
+                        </div>
+                        <div class='flex-1'>
+                            <div class='game-rate-title-wrapper flex'>
+                                <h1 id='boardgame-title' class='game-rate-title'>ÇÇµå ´õ Å©¶óÄË</h1>
+                                <div id='game-rate-year'>( 2021 )</div>
+                            </div>
+                            <h2 class='game-rate-title-eng'>Feed the Kraken</h2>
+                            <div class='game-rate-data flex'>
+                                <div><a href="javascript:void(0);" onclick="call_game_data('rate'); urlnullParamsClear(); goTogamecontents();">Æò°¡ <span id="count-rate">6</span>°Ç</a></div>
+                                <div><a href="javascript:void(0);"onclick="call_game_data('rate'); urlnullParamsClear(); goTogamecontents();">(ÄÚ¸àÆ® <span id="count-comment">5</span>°Ç)</a></div>
+                                <div>&</div>
+                                <div><a href="javascript:void(0);" onclick="call_game_data('brief'); urlnullParamsClear(); goTogamecontents();">ÇÑÁÙÆò <span id="count-brief">1</span>°Ç</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='display-inline'>
+                        <div class='flex game-info-div-wrapper'>
+                            <div class='game-info-div'>
+                                <div class='data-value data-member'>5-11¸í</div>
+                                <div class='data-title'>ÀÎ¿ø</div>
+                            </div>
+                            <div class='game-info-div'>
+                                <div class='data-value data-time'>45-90ºÐ</div>
+                                <div class='data-title'>ÇÃ·¹ÀÌ ½Ã°£</div>
+                            </div>
+                            <div class='game-info-div'>
+                                <div class='data-value data-old'>12¼¼ ÀÌ»ó</div>
+                                <div class='data-title'>»ç¿ë ¿¬·É</div>
+                            </div>
+                            <div class='game-info-div'>
+                                <div class='data-value data-level'><span id="game-rate" class="game-rate">2.16</span><span class='ms-2 me-2'>/</span>5</div>
+                                <div class='data-title'>³­ÀÌµµ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='mt-3 pb-3 game-make-div'>
+                        <div class='flex game-make-row'>
+                            <div class='game-make-title'>µðÀÚÀÌ³Ê:</div>
+                            <div id='designer' class='game-make-data ellip'><a href='storage.php?type=designer&number=78968'>Dr. Hans Joachim H&#246;h</a>, <a href='storage.php?type=designer&number=78969'>Maikel Cheney</a>, <a href='storage.php?type=designer&number=78970'>Tobias Immich</a></div>
+                        </div>
+                        <div class='flex game-make-row'>
+                            <div class='game-make-title'>¾ÆÆ®¿÷:</div>
+                            <div id='artist' class='game-make-data ellip'><a href='storage.php?type=artist&number=37654'>Hendrik Noack</a>, <a href='storage.php?type=artist&number=37655'>James Churchill</a></div>
+                        </div>
+                        <div class='flex game-make-row'>
+                            <div class='game-make-title'>ÃâÆÇ»ç:</div>
+                            <div id='publisher' class='game-make-data ellip'><a href='storage.php?type=publishers&number=2323'>GateOnGames</a>, <a href='storage.php?type=publishers&number=18500'>Funtails</a>, <a href='storage.php?type=publishers&number=18501'>SPIEL INSTABIL</a>, <a href='storage.php?type=publishers&number=18559'>Popcorn Games</a>, <a href='storage.php?type=publishers&number=18604'>Bumble3ee Interactive</a>, <a href='storage.php?type=publishers&number=19123'>¬¯¬Ú¬Ù¬Ñ ¬¤¬Ñ¬Þ¬ã (Niza Gams)</a></div>
+                        </div>
+                        <div class='flex game-make-row'>
+                            <div class='game-make-title'>¾ð¾î ³­ÀÌµµ:</div>
+                            <div id="language" class='game-make-data'>-</div>
+                        </div>
+                        <div id='fan-list-thumb'>
+                            <div class='flex-div game-make-row mt-3'>
+				<div class='game-make-title'><span class='game-make-data'>°ÔÀÓÆÒ:</span></div>
+				<div class='flex-div'><div class='fan-thumb' style='background-image:url(img/no-fan.png); margin-left:0px; z-index:10'></div><div class='fan-thumb' style='background-image:url(img/no-fan.png); margin-left:25px; z-index:9'></div></div></div>
+                        </div>
+                    </div>
+                    <div class='mb-2'>
+                        <div id='star-rating-wraaper' class="flex-div star-rating-wraaper">
+                            <div class='me-2'>³» Á¡¼ö</div>
+                            <div class="flex-div">
+                                <div class='my-star-rate flex-div' data-bs-toggle="modal" data-bs-target="#member-data-login">
+                                    <!-- <div id='star-wrapper' class='flex-div'><div id="star-rating-1" class="like-svg-line" onmouseover="ratingChange(1)"></div><div id="star-rating-2" class="like-svg-line" onmouseover="ratingChange(2)"></div><div id="star-rating-3" class="like-svg-line" onmouseover="ratingChange(3)"></div><div id="star-rating-4" class="like-svg-line" onmouseover="ratingChange(4)"></div><div id="star-rating-5" class="like-svg-line" onmouseover="ratingChange(5)"></div><div id="star-rating-6" class="like-svg-line" onmouseover="ratingChange(6)"></div><div id="star-rating-7" class="like-svg-line" onmouseover="ratingChange(7)"></div><div id="star-rating-8" class="like-svg-line" onmouseover="ratingChange(8)"></div><div id="star-rating-9" class="like-svg-line" onmouseover="ratingChange(9)"></div><div id="star-rating-10" class="like-svg-line" onmouseover="ratingChange(10)"></div></div></div> -->
+                                    <div id='star3-wrapper'><div class='starrr' id='star3'></div></div>
+                                    <input type='text' name='rating' value='' id='star3_input' style='display:none'/>
+                                </div>
+                                <div class="ms-3" id="my-rating"></div>
+                            </div>
+                    </div>
+                    <div class='flex mt-3 mb-4 reg-btn-wraaper'>
+                        <!-- { {°ÔÀÓ±¸¸Å¹öÆ°PC}} -->
+                        <!-- <div class='reg-btn reg-btn-cart'><div class='game-cart-svg me-2'></div><div>°ÔÀÓ±¸¸Å</div></div> -->
+                        <div class='reg-btn reg-btn-collection' data-bs-toggle="modal" data-bs-target="#member-data-login"><div class='game-list-svg me-2'></div><div>ÄÃ·º¼Ç Ãß°¡</div></div>
+                        <div class='reg-btn reg-btn-play' data-bs-toggle="modal" data-bs-target="#member-data-login">PLAY µî·Ï</div>
+                        <div id='fan-btn' class='reg-btn reg-btn-like' onclick='savefinish("reg-btn-like","È¸¿øÀü¿ë ¼­ºñ½ºÀÔ´Ï´Ù.");'><div id='fan-icon' class='game-like-svg me-2 '></div><div id='fan-btn-text'>ÆÒµî·Ï</div><div id="count-fan" class="ms-2">2</div></div>
+                        <div id='alert-btn' class='reg-btn reg-btn-subscribe' onclick='savefinish("reg-btn-subscribe","È¸¿øÀü¿ë ¼­ºñ½ºÀÔ´Ï´Ù.");'><div id='alert-icon' class='bell-svg me-2 '></div><span id='alert-btn-text'>±¸µ¶ÇÏ±â</span><div id="count-alert" class="ms-2">1</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="game-photo"></div>
+<!-- ¸Þ´º -->
+<div class='div-contents game-info-menu flex mb-3'>
+    <div id="game-overview" onclick="call_game_data(); call_game_intro(); urlnullParamsClear();">ÁÖ¿äÁ¤º¸</div>
+    <!-- <div id="game-info" onclick="call_game_data('info'); urlnullParamsClear();">À¯ÀúÁ¤º¸</div> -->
+    <div id="game-rate" onclick="call_game_data('rate'); urlnullParamsClear();">°ÔÀÓÆò</div>
+    <div id="game-play" onclick="call_game_data('play'); urlnullParamsClear();">ÇÃ·¹ÀÌ</div>
+    <div id="game-brief" onclick="call_game_data('brief'); urlnullParamsClear();">ÇÑÁÙÆò</div>
+    <div id="game-collection" onclick="call_game_data('collection'); urlnullParamsClear();">ÄÃ·º¼Ç</div>
+    <!-- <div id="game-gallery" onclick="call_game_data('gallery'); urlnullParamsClear();">»çÁø</div> -->
+    <!-- <div id="game-review" onclick="call_game_data('review'); urlnullParamsClear();">ÈÄ±â</div>
+    <div id="game-movie" onclick="call_game_data('movie'); urlnullParamsClear();">µ¿¿µ»ó</div>
+    <div id="game-file" onclick="call_game_data('file'); urlnullParamsClear();">ÀÚ·á½Ç</div> -->
+    <div id="game-community" onclick="call_game_data('community'); urlnullParamsClear();">Ä¿¹Â´ÏÆ¼</div>
+    <!-- <div id="game-version" onclick="call_game_data('version'); urlnullParamsClear();">¹öÀü</div> -->
+    <div id="game-expansion" onclick="call_game_data('expansion'); urlnullParamsClear();">°ü·Ã°ÔÀÓ</div>
+    <!-- <div id="game-shopping" onclick="call_game_data('shopping'); urlnullParamsClear();">¼îÇÎ</div> -->
+    <div id="game-used" onclick="call_game_data('used'); urlnullParamsClear();">Áß°í</div>
+    <div class='flex-1'></div>
+</div>
+
+<div class="flex">
+    <!-- ajax ÄÁÅÙÃ÷ -->
+    <div id="loading-game-div" style="width:100%">
+        <div class='div-contents'>
+            <!-- { {°Ô½ÃÆÇº¸±â ÆäÀÌÁö´ç11°³,°¡·Î11°³,Á¦¸ñ±æÀÌ90ÀÚ,º»¹®±æÀÌ200ÀÚ,°¶·¯¸®,bbs_rows_photo_gallery_images.html,´©¶ô0°³,,°øÁö±ÛÁ¦¿Ü,100/100,,}} -->
+        </div>
+        <!-- ÁÖ¿ä Á¤º¸ -->
+        <div id='game-overview-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title flex-div'>
+                <div class="flex-1">ÁÖ¿ä Á¤º¸</div>
+                <a href="https://boardgamegeek.com/boardgame/271601/feed-kraken" target='_blank' class='geekBtn'><div class='flex-div'><div>º¸µå°ÔÀÓ±ã</div><div class='link-svg bgg ms-2'></div></div></a>
+            </div>
+            <div class='flex'>
+                <div class="game-main-info-box flex-1">
+                    <div id="main-inno-project-wrapper" class="display-none game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3">ÀÌ³ë ÇÁ·ÎÁ§Æ® ÁøÇàÁß<div id="game-main-alarm-text"></div><div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-inno-project"></div>
+                    </div>
+                    
+                    <!-- <div class="game-intro-div-title mb-3">0. °ÔÀÓ ¼³¸í ( ºñ¸¶ÄÏ ÆÇ¸Å °èÁ¤¸¸ µî·Ï ¼öÁ¤ °¡´É )</div> -->
+                    <div id="main-mechanism-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3">ÁÖ¿ä Å×¸¶ ¹× ÁøÇà¹æ½Ä<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-mechanism">
+                            <a class="main-mechanism-link Skeleton" href="javascript:void(0)"></a>
+                            <a class="main-mechanism-link Skeleton" href="javascript:void(0)"></a>
+                            <a class="main-mechanism-link Skeleton" href="javascript:void(0)"></a>
+                            <a class="main-mechanism-link Skeleton" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="main-wieght-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3">°ÔÀÓ ³­ÀÌµµ ºñ±³<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-weight">
+                        </div>
+                    </div>
+                    <div class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 flex-div ">ÃßÃµ ÀÎ¿ø¼ö<div class="beta-fill-svg ms-2 danger"></div><div id="recommend-player" class="ms-3 flex-div"></div></div>
+                        <div id="playerChartWrapper">
+                            <canvas id="playerRecommendChart" style="max-height:200px"></canvas>
+                        </div>
+                    </div>
+                    <!-- <div class="game-intro-div-title mb-3">3. Ä«µå ½ÇÃø Á¤º¸(Å©±â/Àå¼ö)</div>
+                    <div class="game-intro-div-title mb-3">4. ¾Û Á¤º¸( 5°³ Ãâ·Â // Áï½Ã ³ëÃâ ºÒÇÊ¿ä ÇÔ¿¡ À¯ÀÇ )</div> -->
+                    <div id="main-recommend-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">ÃßÃµ °ÔÀÓÆò<div class="beta-fill-svg ms-2 danger"></div><a class="game-main-div-more" href="javascript:void(0)" onclick="call_game_data('rate'); urlnullParamsClear();">´õº¸±â</a></div>
+                        <div id="main-recommend">
+                            <div class="main-comment">
+                                <div class="main-comment-img Skeleton"></div>
+                                <div class="main-comment-svg"><div class="quotation-svg"></div></div>
+                                <div class="main-comment-text-wrapper">
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                </div>
+                                <div class="main-comment-svg end"><div class="quotation-svg end"></div></div>
+                            </div>
+                            <div class="main-comment">
+                                <div class="main-comment-img Skeleton"></div>
+                                <div class="main-comment-svg"><div class="quotation-svg"></div></div>
+                                <div class="main-comment-text-wrapper">
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                </div>
+                                <div class="main-comment-svg end"><div class="quotation-svg end"></div></div>
+                            </div>
+                            <div class="main-comment">
+                                <div class="main-comment-img Skeleton"></div>
+                                <div class="main-comment-svg"><div class="quotation-svg"></div></div>
+                                <div class="main-comment-text-wrapper">
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                    <div class="main-comment-text Skeleton"></div>
+                                </div>
+                                <div class="main-comment-svg end"><div class="quotation-svg end"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="main-inno-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title">ÀÌ³ë ÇÁ·ÎÁ§Æ® ¿ÀÇÂ&ÁøÇà<div class="beta-fill-svg ms-2 danger"></div><a class="game-main-div-more" href='https://inno.boardlife.co.kr'>´õº¸±â</a></div>
+                        <div class='main-game-sub-text mb-3'>ÀÌ³ë¿¡¼­ ¿ÀÇÂµÈ º¸µå°ÔÀÓ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ¼¼¿ä.</div>
+                        <div id='main-game-inno' class='main-game-listing'>
+                            <a class='game-listing-wrapper'>
+                                <div class='game-listing'>
+                                    <div class='game-listing-thumb2 Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-info Skeleton'></div>
+                                </div>
+                            </a>
+                            <a class='game-listing-wrapper'>
+                                <div class='game-listing'>
+                                    <div class='game-listing-thumb2 Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-info Skeleton'></div>
+                                </div>
+                            </a>
+                            <a class='game-listing-wrapper'>
+                                <div class='game-listing'>
+                                    <div class='game-listing-thumb2 Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-info Skeleton'></div>
+                                </div>
+                            </a>
+                            <a class='game-listing-wrapper'>
+                                <div class='game-listing'>
+                                    <div class='game-listing-thumb2 Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-info Skeleton'></div>
+                                </div>
+                            </a>
+                            <a class='game-listing-wrapper'>
+                                <div class='game-listing'>
+                                    <div class='game-listing-thumb2 Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-title Skeleton'></div>
+                                    <div class='game-listing-info Skeleton'></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="game-intro-div-title mb-3">5. °ÔÀÓÆò ( ÃÖ°í Á¡¼ö 2~3°³ Ãâ·Â ·£´ý )</div> -->
+                    <!-- <div id="main-similar-wrapper">
+                        <div class="game-intro-div-title mb-3">ÁøÇà ¹æ½ÄÀÌ À¯»çÇÑ °ÔÀÓ Ãâ·Â ( 5°³ Ãâ·Â )</div>
+                        <div id="main-similar-list">
+                        </div>
+                    </div> -->
+                    <div id="main-designer-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">ÀÌ °ÔÀÓ µðÀÚÀÌ³ÊÀÇ ´Ù¸¥ ÀÛÇ°<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <!-- <a class="game-main-div-more" href="javascript:void(0)" onclick="call_game_data('community'); urlnullParamsClear(); loadboard(1); scrollMove('game-community-box'); ">´õº¸±â</a> -->
+                        <div id="main-designer-list"></div>
+                    </div>
+                        
+                    
+
+                    <div id="main-review-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">°ÔÀÓ ÈÄ±â<div class="beta-fill-svg ms-2 danger"></div><a class="game-main-div-more" href="javascript:void(0)" onclick="call_game_data('community'); urlnullParamsClear(); loadboard(1); scrollMove('game-community-box'); ">´õº¸±â</a></div>
+                        <div id="main-review"></div>
+                    </div>
+                    <div id="main-similar-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">ÀÌ °ÔÀÓ°ú À¯»çÇÑ º¸µå°ÔÀÓ<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-similar-list"></div>
+                    </div>
+                    <div class="flex game-main-div-wrapper">
+                        <div id="main-file-wrapper" class="flex-1 me-3">
+                            <div class="game-main-div-title mb-3">ÀÚ·á½Ç<div class="beta-fill-svg ms-2 danger"></div><a class="game-main-div-more" href="javascript:void(0)" onclick="call_game_data('community'); urlnullParamsClear(); loadboard(7); scrollMove('game-community-box');">´õº¸±â</a></div>
+                            <div id="main-file"></div>
+                        </div>
+                        <div id="main-btv-wrapper" class="flex-1 ms-3">
+                            <div class="game-main-div-title mb-3">BTV<div class="beta-fill-svg ms-2 danger"></div><a class="game-main-div-more" href="javascript:void(0)" onclick="call_game_data('community'); urlnullParamsClear(); loadboard(2); scrollMove('game-community-box');">´õº¸±â</a></div>
+                            <div id="main-btv"></div>
+                        </div>
+                    </div>
+                    <div id="main-fan-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">ÀÌ °ÔÀÓÀ» ÁÁ¾ÆÇÏ´Â ºÐ²² ÃßÃµÇÏ´Â º¸µå°ÔÀÓ<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-fan-list"></div>
+                    </div>
+                    <div id="main-detail-wrapper" class="game-main-div-wrapper">
+                        <div class="game-main-div-title mb-3 ">°ÔÀÓ »ó¼¼ Á¤º¸<div class="beta-fill-svg ms-2 danger"></div></div>
+                        <div id="main-detail-list" class="flex">
+                            <div class="flex-1 me-2">
+                                <div class="main-detail-list-title">°ÔÀÓÀ¯Çü</div>
+                                <ul id="game-type" class="main-detail-list-ul">
+                                    <li><a href='javascript:void(0)'>-</a></li>
+                                </ul>
+                            </div>
+                            <div class="flex-1 ms-2 me-2">
+                                <div class="main-detail-list-title">Å×¸¶</div>
+                                <ul id="game-category" class="main-detail-list-ul">
+                                    <li><a href='javascript:void(0)'>-</a></li>
+                                </ul>
+                            </div>
+                            <div class="flex-1 ms-2">
+                                <div class="main-detail-list-title">ÁøÇà¹æ½Ä</div>
+                                <ul id="game-mechanisms" class="main-detail-list-ul">
+                                    <li><a href='javascript:void(0)'>-</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                     
+                    <div class="game-intro-div-title mb-3">6. ÀÚ·á½Ç( 5°³ Ãâ·Â / ÃÖ½Å±Û / ÃßÃµ / Á¶È¸¼ö )</div>
+                    <div class="game-intro-div-title mb-3">7. °ÔÀÓÈÄ±â ÃÖ½Å±Û( 5°³ Ãâ·Â )</div>
+                    <div class="game-intro-div-title mb-3">ÃßÃµ°Ô½Ã±Û ( ÃßÃµ °Ô½ÃÆÇ Á¦ÀÛ ÈÄ )</div>
+                    <div class="game-intro-div-title mb-3">¸®ºä ÈÄ±â±Û( 5°³ Ãâ·Â )</div>
+                    <div class="game-intro-div-title mb-3">µ¿¿µ»ó ( 5°³ Ãâ·Â )</div>
+                    <div class="game-intro-div-title mb-3">ÄÃ·º¼Ç ( 5°³ Ãâ·Â )</div>
+                    <div class="game-intro-div-title mb-3">°ü·Ã°ÔÀÓ ( 5°³ Ãâ·Â )</div> -->
+                    
+                </div>
+                <div class='game-intro-wrapper display-none'>
+                    <div id='game-intro-div' class='game-wiki-info-div'>
+                    </div>
+                    <div class='game-intro-div-title'>¼ö»ó³»¿ª</div>
+                    <div id='game-award-div' class='game-wiki-info-div'>
+                        
+                    </div>
+                    <div class='game-intro-div-title'>±¸¼º¹° Á¤º¸</div>
+                    <div id='game-box-div' class='game-wiki-info-div'>
+                    </div>
+                </div>
+                
+            </div>
+            <div class='flex display-none'>
+                <div id="shopping-top" class='flex-1'>
+                    <div class='game-contents-rows'>
+                        <div class='game-contents-title mt-4'>±¸¸Å Á¤º¸</div>
+                        <div id='game-contents-shop'></div>
+                        </div>
+                        <div class='game-contents-rows'>
+                        <div id='game-contents-post-title' class='game-contents-title mt-4'>
+                            <div class="flex-1">°ÔÀÓÈÄ±â</div>
+                            <div class="game-main-more"><a onclick="call_game_data('community'); urlnullParamsClear(); loadboard(1); scrollMove('game-community-box'); ">ÀüÃ¼º¸±â</a></div>
+                        </div>
+                        <div id='game-contents-post'></div>
+                        </div>
+                        <div class='game-contents-rows'>
+                        <div id='game-contents-movie-title' class='game-contents-title mt-4'>
+                            <div class="flex-1">µ¿¿µ»ó</div>
+                            <div class="game-main-more"><a onclick="call_game_data('community'); urlnullParamsClear(); loadboard(2); scrollMove('game-community-box');">ÀüÃ¼º¸±â</a></div>
+                        </div>
+                        <div id='game-contents-movie'></div>
+                        </div>
+                        <div class='game-contents-rows'>
+                        <div id='game-contents-files-title' class='game-contents-title mt-4'>
+                            <div class="flex-1">ÀÚ·á½Ç</div>
+                            <div class="game-main-more"><a onclick="call_game_data('community'); urlnullParamsClear(); loadboard(7); scrollMove('game-community-box');">ÀüÃ¼º¸±â</a></div>
+                        </div>
+                        <div id='game-contents-files'></div>
+                    </div>            
+                </div>
+            </div>  
+            <!-- <div class='game-contents-rows'>
+            <div class='game-contents-title mt-4'>°ÔÀÓÆò</div>
+            </div>
+            <div class='game-contents-rows'>
+            <div class='game-contents-title mt-4'>ÆÒµéÀÌ ÁÁ¾ÆÇÏ´Â ºñ½ÁÇÑ °ÔÀÓ</div>
+            </div> -->
+        </div>
+        <!-- <div id='game-info-box' class='div-contents game-contents-div'>
+            <div class='div-contents'>
+                <div class='game-contents-title'>°ÔÀÓ ³­ÀÌµµ</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>·ê ¼³¸í ½Ã°£</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>¾ð¾î ³­ÀÌµµ</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>ÇÁ·ÎÅØÅÍ Á¤º¸</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>·ê ¼³¸í ½Ã°£</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>Web/app Á¤º¸</div>
+                <div class='contents-div-box'></div>
+                <div class='game-contents-title'>ÃßÃµ BGM</div>
+                <div class='contents-div-box'></div>
+            </div>
+        </div> -->
+        <!-- °ÔÀÓÆò°¡ -->
+        <div id='game-rate-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left'>°ÔÀÓ Æò°¡ & ÄÚ¸àÆ®<div id='game-rate-all-count'></div></div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                        <button id='rating' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Á¡¼ö
+                        </button>
+                        <ul id='rating-ul' class="dropdown-menu" aria-labelledby="rating">
+                            <li id='rating-0' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(0)'><span>ÀüÃ¼</span></a></li>
+                            <li id='rating-10' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(10)'><span>10</span></a></li>
+                            <li id='rating-9' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(9)'><span>9</span></a></li>
+                            <li id='rating-8' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(8)'><span>8</span></a></li>
+                            <li id='rating-7' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(7)'><span>7</span></a></li>
+                            <li id='rating-6' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(6)'><span>6</span></a></li>
+                            <li id='rating-5' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(5)'><span>5</span></a></li>
+                            <li id='rating-4' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(4)'><span>4</span></a></li>
+                            <li id='rating-3' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(3)'><span>3</span></a></li>
+                            <li id='rating-2' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(2)'><span>2</span></a></li>
+                            <li id='rating-1' class='rating-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadRate(1)'><span>1</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button id='comment' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            ÄÚ¸àÆ®
+                        </button>
+                        <ul id='comment-ul' class="dropdown-menu" aria-labelledby="comment">
+                            <li id='comment-0' class='comment-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadComment(0)'><span>ÀüÃ¼ Æò°¡</span></a></li>
+                            <li id='comment-1' class='comment-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadComment(1)'><span>ÄÚ¸àÆ®°¡ ÀÖ´Â Æò°¡</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button id='sort' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        ¸®½ºÆÃ
+                        </button>
+                        <ul id='sort-ul' class="dropdown-menu" aria-labelledby="sort">
+                            <li id='sort-0' class='sort-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadSort(0)'><span>ÃÖ±Ù µî·Ï¼ø</span></a></li>
+                            <li id='sort-1' class='sort-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadSort(1)'><span>µî·Ï¼ø</span></a></li>
+                            <li id='sort-2' class='sort-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadSort(2)'><span>³ôÀº Á¡¼ö¼ø</span></a></li>
+                            <li id='sort-3' class='sort-li'><a class="dropdown-item" href="javascript:void(0);" onclick='loadSort(3)'><span>³·Àº Á¡¼ö¼ø</span></a></li>
+                        </ul>
+                    </div>
+                    <div class='reg-rate' data-bs-toggle="modal" data-bs-target="#member-data-login">
+                        <div class='plus-white-svg'></div><div>³» Á¡¼ö µî·Ï</div>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-rate-0' class='category-rate active' onclick='categoryRate()'>ÀüÃ¼<span class='category-count'></span></li>
+                        <!-- <li id='category-rate-1' class='category-rate' onclick='categoryRate(1)'>ÇÑÁÙÆò<span class='category-count'></span></li> -->
+                    </ul>
+                    <ol class='rate-graph mt-3'>
+                        <li id='view-rate-10' class='category-rate' onclick='loadRate(10)'><div>10</div><div class='view-bar'><div id='rate-grade-10'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-9' class='category-rate' onclick='loadRate(9)'><div>9</div><div class='view-bar'><div id='rate-grade-9'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-8' class='category-rate' onclick='loadRate(8)'><div>8</div><div class='view-bar'><div id='rate-grade-8'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-7' class='category-rate' onclick='loadRate(7)'><div>7</div><div class='view-bar'><div id='rate-grade-7'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-6' class='category-rate' onclick='loadRate(6)'><div>6</div><div class='view-bar'><div id='rate-grade-6'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-5' class='category-rate' onclick='loadRate(5)'><div>5</div><div class='view-bar'><div id='rate-grade-5'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-4' class='category-rate' onclick='loadRate(4)'><div>4</div><div class='view-bar'><div id='rate-grade-4'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-3' class='category-rate' onclick='loadRate(3)'><div>3</div><div class='view-bar'><div id='rate-grade-3'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-2' class='category-rate' onclick='loadRate(2)'><div>2</div><div class='view-bar'><div id='rate-grade-2'></div></div><div class='view-count'>0</div></li>
+                        <li id='view-rate-1' class='category-rate' onclick='loadRate(1)'><div>1</div><div class='view-bar'><div id='rate-grade-1'></div></div><div class='view-count'>0</div></li>
+                    </ol>
+                </div>
+                <div id='game-contents-div-rate' class='game-contents-right-div'>
+                    <!-- <div class='no-game-contents-data no-rate-data display-none'>ÇØ´ç °ÔÀÓÆòÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            <div class='more-btn'></div>
+        </div>
+        <!-- ÇÃ·¹ÀÌ -->
+        <div id='game-play-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left'>ÇÃ·¹ÀÌ<div id='game-play-all-count'></div></div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                        <button id='rating-play' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Á¡¼ö
+                        </button>
+                        <ul id='rating-play-ul' class="dropdown-menu" aria-labelledby="rating-play">
+                            <li id='rating-play-0'><a class="dropdown-item" href="javascript:void(0);"  onclick='loadPlayRate(0)'><span>ÀüÃ¼</span></a></li>
+                            <li id='rating-play-5'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(5)'><span>¡Ú¡Ú¡Ú¡Ú¡Ú</span></a></li>
+                            <li id='rating-play-4'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(4)'><span>¡Ú¡Ú¡Ú¡Ú¡Ù</span></a></li>
+                            <li id='rating-play-3'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(3)'><span>¡Ú¡Ú¡Ú¡Ù¡Ù</span></a></li>
+                            <li id='rating-play-2'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(2)'><span>¡Ú¡Ú¡Ù¡Ù¡Ù</span></a></li>
+                            <li id='rating-play-1'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(1)'><span>¡Ú¡Ù¡Ù¡Ù¡Ù</span></a></li>
+                            <li id='rating-play-6'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayRate(6)'><span>¡Ù¡Ù¡Ù¡Ù¡Ù</span></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button id='comment-play' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            ÄÚ¸àÆ®
+                        </button>
+                        <ul id='comment-play-ul' class="dropdown-menu" aria-labelledby="comment-play">
+                            <li id='comment-play-0'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayComment(0)'><span>ÀüÃ¼ ÇÃ·¹ÀÌ</span></a></li>
+                            <li id='comment-play-1'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlayComment(1)'><span>ÄÚ¸àÆ®°¡ ÀÖ´Â ÇÃ·¹ÀÌ</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button id='sort-play' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        ¸®½ºÆÃ
+                        </button>
+                        <ul id='sort-play-ul' class="dropdown-menu" aria-labelledby="sort-play">
+                            <li id='sort-play-0'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlaySort(0)'><span>ÃÖ±Ù µî·Ï¼ø</span></a></li>
+                            <li id='sort-play-1'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlaySort(1)'><span>µî·Ï¼ø</span></a></li>
+                            <li id='sort-play-2'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlaySort(2)'><span>³ôÀº Á¡¼ö¼ø</span></a></li>
+                            <li id='sort-play-3'><a class="dropdown-item" href="javascript:void(0);" onclick='loadPlaySort(3)'><span>³·Àº Á¡¼ö¼ø</span></a></li>
+                        </ul>
+                    </div>
+                    <div class='reg-rate' data-bs-toggle="modal" data-bs-target="#member-data-login">
+                        <div class='plus-white-svg'></div><div>PLAY µî·Ï</div>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-play-0' class='category-play active' onclick='categoryPlay()'>ÀüÃ¼<span class='category-count'></span></li>
+                        <!-- <li id='category-play-1' class='category-play' onclick='categoryplay(1)'>ÇÑÁÙÆò<span class='category-count'></span></li> -->
+                    </ul>
+                    <ol class='rate-graph mt-3'>
+                        <li id='view-play-5' class='category-play' onclick='loadPlayRate(5)'><div>5</div><div class='view-bar'><div class='play-grade-5'></div></div><div class='view-count'>..</div></li>
+                        <li id='view-play-4' class='category-play' onclick='loadPlayRate(4)'><div>4</div><div class='view-bar'><div class='play-grade-4'></div></div><div class='view-count'>..</div></li>
+                        <li id='view-play-3' class='category-play' onclick='loadPlayRate(3)'><div>3</div><div class='view-bar'><div class='play-grade-3'></div></div><div class='view-count'>..</div></li>
+                        <li id='view-play-2' class='category-play' onclick='loadPlayRate(2)'><div>2</div><div class='view-bar'><div class='play-grade-2'></div></div><div class='view-count'>..</div></li>
+                        <li id='view-play-1' class='category-play' onclick='loadPlayRate(1)'><div>1</div><div class='view-bar'><div class='play-grade-1'></div></div><div class='view-count'>..</div></li>
+                        <li id='view-play-0' class='category-play' onclick='loadPlayRate(6)'><div>-</div><div class='view-bar'><div class='play-grade-0'></div></div><div class='view-count'>..</div></li>
+                    </ol>
+                </div>
+                <div id='game-contents-div-play' class='game-contents-right-div'>
+                    <!-- <div class='no-game-contents-data no-play-data display-none'>ÇØ´ç °ÔÀÓÆòÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            <div class='more-btn'></div>
+        </div>
+        <!-- ÇÑÁÙÆò -->
+        <div id='game-brief-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left'>ÇÑÁÙÆò<div id='game-brief-all-count'></div></div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                        <button id='sort-brief' class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        ¸®½ºÆÃ
+                        </button>
+                        <ul id='sort-brief-ul' class="dropdown-menu" aria-labelledby="sort-brief">
+                            <li id='sort-brief-0'><a class="dropdown-item" href="javascript:void(0);" onclick='loadBriefSort(0)'><span>ÃÖ±Ù µî·Ï¼ø</span></a></li>
+                            <li id='sort-brief-1'><a class="dropdown-item" href="javascript:void(0);" onclick='loadBriefSort(1)'><span>µî·Ï¼ø</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class='reg-rate' data-bs-toggle="modal" data-bs-target="#member-data-login">
+                        <div class='plus-white-svg'></div><div>PLAY µî·Ï</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-brief-0' class='category-brief active' onclick='categoryBrief()'>ÀüÃ¼<span class='category-count'></span></li>
+                        <!-- <li id='category-play-1' class='category-play' onclick='categoryplay(1)'>ÇÑÁÙÆò<span class='category-count'></span></li> -->
+                    </ul>
+                </div>
+                <div id='game-contents-div-brief' class='game-contents-right-div'>
+                    <!-- <div class='no-game-contents-data no-play-data display-none'>ÇØ´ç °ÔÀÓÆòÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            <div class='more-btn'></div>
+        </div>
+        <!-- ÄÃ·º¼Ç -->
+        <div id='game-collection-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left'>ÄÃ·º¼Ç</div>
+                <div class='game-contents-title-right'>
+                    <div class='reg-rate' data-bs-toggle="modal" data-bs-target="#member-data-login">
+                        <div class='plus-white-svg'></div><div>ÄÃ·º¼Ç Ãß°¡</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-collection-0' class='category-collection' onclick='loadCollection(0)'>ÀüÃ¼<span class='category-count'></span></li>
+                        <li id='category-collection-1' class='category-collection' onclick='loadCollection(1)'>º¸À¯°ÔÀÓ<span class='category-count'></span></li>
+                        <li id='category-collection-2' class='category-collection' onclick='loadCollection(2)'>ÆÒµî·Ï<span class='category-count'></span></li>
+                        <li id='category-collection-3' class='category-collection' onclick='loadCollection(3)'>À§½Ã¸®½ºÆ®<span class='category-count'></span></li>
+                        <li id='category-collection-4' class='category-collection' onclick='loadCollection(4)'>±¸µ¶<span class='category-count'></span></li>
+                        <li id='category-collection-5' class='category-collection' onclick='loadCollection(5)'>º¸À¯Çß´ø °ÔÀÓ<span class='category-count'></span></li>
+                        <li id='category-collection-6' class='category-collection' onclick='loadCollection(6)'>¼±ÁÖ¹®<span class='category-count'></span></li>
+                        <li id='category-collection-7' class='category-collection' onclick='loadCollection(7)'>ÆÝµùÂü¿©<span class='category-count'></span></li>
+                        <li id='category-collection-8' class='category-collection' onclick='loadCollection(8)'>¹æÃâ¿¹Á¤<span class='category-count'></span></li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-collection' class='game-contents-right-div'>
+                    <!-- <div class='no-game-contents-data no-play-data display-none'>ÇØ´ç °ÔÀÓÆòÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            <div class='more-btn'></div>
+        </div>
+        <!-- Ä¿¹Â´ÏÆ¼ -->
+        <div id='game-community-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-board'>Ä¿¹Â´ÏÆ¼<div class='all-view-btn'><div>ÀüÃ¼</div><div id='all-view-count'></div></div></div>
+                <div class='game-contents-title-right'>
+                    <!-- <div class='reg-rate'>
+                        <div class='plus-white-svg'></div><div>±Û¾²±â</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-board-0' class='category-board' onclick='loadboard(0);'>ÀüÃ¼<span class='category-count'></span></li>
+                        <li id='category-board-1' class='category-board' onclick='loadboard(1);'>ÈÄ±â<span class='category-count'></span></li>
+                        <li id='category-board-2' class='category-board' onclick='loadboard(2);'>µ¿¿µ»ó<span class='category-count'></span></li>
+                        <li id='category-board-3' class='category-board' onclick='loadboard(3);'>À¯Àú¼Ò½Ä<span class='category-count'></span></li>
+                        <li id='category-board-4' class='category-board' onclick='loadboard(4);'>±¸¼ºÁ¤º¸<span class='category-count'></span></li>
+                        <li id='category-board-5' class='category-board' onclick='loadboard(5)'>°ø¹æ<span class='category-count'></span></li>
+                        <li id='category-board-6' class='category-board' onclick='loadboard(6)'>¹®ÀÇ<span class='category-count'></span></li>
+                        <li id='category-board-7' class='category-board' onclick='loadboard(7)'>ÀÚ·á<span class='category-count'></span></li>
+                        <li id='category-board-8' class='category-board' onclick='loadboard(8)'>ÀÚÀ¯°Ô½ÃÆÇ<span class='category-count'></span></li>
+                        <li id='category-board-9' class='category-board' onclick='loadboard(9)'>³ëÇÏ¿ì<span class='category-count'></span></li>
+                        <li id='category-board-10' class='category-board' onclick='loadboard(10)'>¼³¹®<span class='category-count'></span></li>
+                        <li id='category-board-11' class='category-board' onclick='loadboard(11)'>ÀÚÀÛ<span class='category-count'></span></li>
+                        <li id='category-board-12' class='category-board' onclick='loadboard(12)'>APP-PC<span class='category-count'></span></li>
+                        <li id='category-board-13' class='category-board' onclick='loadboard(13)'>°ü·ÃÁ¤º¸<span class='category-count'></span></li>
+                        <li id='category-board-14' class='category-board' onclick='loadboard(14)'>ÆÌÄ³½ºÆ®<span class='category-count'></span></li>
+                        <!-- <li id='category-board-4' class='category-board' onclick='loadboard(4)'>ÀÚÀ¯°Ô½ÃÆÇ<span class='category-count'></span></li>
+                        <li id='category-board-10' class='category-board' onclick='loadboard(10)'>Á¤±â¸ðÀÓ<span class='category-count'></span></li>
+                        <li id='category-board-11' class='category-board' onclick='loadboard(11)'>º¸µåÄ«Æä<span class='category-count'></span></li>
+                        <li id='category-board-12' class='category-board' onclick='loadboard(12)'>º¸µå°ÔÀÓ Çà»ç<span class='category-count'></span></li> -->
+                        
+                    </ul>
+                </div>
+                <div class='game-contents-right-div-wrapper'>
+                    <div id='game-contents-div-board' class='game-contents-right-div'>
+                        <!-- <div class='no-game-contents-data no-play-data display-none'>ÇØ´ç °ÔÀÓÆòÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                    </div>
+                    <div id='game-board-list-page'></div>
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            
+        </div>
+        <!--»çÁø-->
+        <div id='game-gallery-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>»çÁø</div>
+        </div>
+        <!--°ÔÀÓÈÄ±â-->
+        <div id='game-review-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-review'>ÈÄ±â</div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                    
+                        <!-- <div class='reg-rate' id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class='plus-white-svg'></div><div>ÈÄ±â ÀÛ¼º</div>
+                        </div> -->
+                        
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="javascript:void(0);">¸®ºä</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">ÇÁ¸®ºä</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">¸ðÀÓ</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">°£´Ü</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-review-0' class='category-review' onclick='loadreview(0)'>ÀüÃ¼<span id='category-review-count-0' class='category-count'>0</span></li>
+                        <li id='category-review-1' class='category-review' onclick='loadreview(1)'>¸®ºä<span id='category-review-count-1' class='category-count'>0</span></li>
+                        <li id='category-review-2' class='category-review' onclick='loadreview(2)'>ÇÁ¸®ºä<span id='category-review-count-2' class='category-count'>0</span></li>
+                        <li id='category-review-3' class='category-review' onclick='loadreview(3)'>¸ðÀÓ<span id='category-review-count-3' class='category-count'>0</span></li>
+                        <li id='category-review-4' class='category-review' onclick='loadreview(4)'>°£´Ü<span id='category-review-count-4' class='category-count'>0</span></li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-review' class='game-contents-right-div'>
+                    <div class='no-game-contents-data no-review-data display-none'>ÀÛ¼º±ÛÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+                </div>
+            </div>
+        </div>
+        <!--µ¿¿µ»ó-->
+        <div id='game-movie-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-movie'>µ¿¿µ»ó</div>
+                <div class='game-contents-title-right'>
+                    <!-- <div class='reg-rate'>
+                        <div class='plus-white-svg'></div><div>µ¿¿µ»ó µî·Ï</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-movie-0' class='category-movie' onclick='loadMovie(0)'>ÀüÃ¼<span id='category-movie-count-0' class='category-count'>0</span></li>
+                        <li id='category-movie-1' class='category-movie' onclick='loadMovie(1)'>±ÔÄ¢¼³¸í<span id='category-movie-count-1' class='category-count'>0</span></li>
+                        <li id='category-movie-2' class='category-movie' onclick='loadMovie(2)'>ÇÃ·¹ÀÌ<span id='category-movie-count-2' class='category-count'>0</span></li>
+                        <li id='category-movie-3' class='category-movie' onclick='loadMovie(3)'>ÀÌ¾ß±â<span id='category-movie-count-3' class='category-count'>0</span></li>
+                        <li id='category-movie-4' class='category-movie' onclick='loadMovie(4)'>°³ºÀ¿µ»ó<span id='category-movie-count-4' class='category-count'>0</span></li>
+                        <li id='category-movie-5' class='category-movie' onclick='loadMovie(5)'>¸®ºä<span id='category-movie-count-5' class='category-count'>0</span></li>
+                        <li id='category-movie-6' class='category-movie' onclick='loadMovie(6)'>³ëÇÏ¿ì<span id='category-movie-count-6' class='category-count'>0</span></li>
+                        <li id='category-movie-7' class='category-movie' onclick='loadMovie(7)'>±âÅ¸<span id='category-movie-count-7' class='category-count'>0</span></li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-movie' class='game-contents-right-div'>
+                    <div class='no-game-contents-data no-movie-data display-none'>µ¿¿µ»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+                </div>
+            </div>
+        </div>
+        <!--ÀÚ·á½Ç-->
+        <div id='game-file-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-file'>ÀÚ·á½Ç</div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                    
+                        <!-- <div class='reg-rate' id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class='plus-white-svg'></div><div>ÀÚ·á µî·Ï</div>
+                        </div> -->
+                        
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="javascript:void(0);">ÇÑ±¹¾î·êºÏ</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">ÇÑ±ÛÈ­ÀÚ·á</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">¿ä¾à·ê</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">ÂüÁ¶Ç¥</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">±×¿ÜÀÚ·á</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-file-0' class='category-file' onclick='categoryFile(0)'>ÀüÃ¼</li>
+                        <li id='category-file-1' class='category-file' onclick='categoryFile(1)'>ÇÑ±¹¾î·êºÏ</li>
+                        <li id='category-file-2' class='category-file' onclick='categoryFile(2)'>ÇÑ±ÛÈ­ÀÚ·á</li>
+                        <li id='category-file-3' class='category-file' onclick='categoryFile(3)'>¿ä¾à·ê</li>
+                        <li id='category-file-4' class='category-file' onclick='categoryFile(4)'>ÂüÁ¶Ç¥</li>
+                        <li id='category-file-5' class='category-file' onclick='categoryFile(5)'>±×¿ÜÀÚ·á</li>
+                        <li id='category-file-6' class='category-file' onclick='categoryFile(6)'>±âÅ¸</li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-file' class='game-contents-right-div'>
+                    <div class='no-game-contents-data no-file-data display-none'>ÀÚ·á°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+                </div>
+            </div>
+        </div>
+        <!--¹öÀü-->
+        <div id='game-version-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>¹öÀü</div>
+        </div>
+        <!--°ü·Ã°ÔÀÓ-->
+        <div id='game-expansion-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-expansion'>°ü·Ã °ÔÀÓ<div class='all-view-btn'><div>ÀüÃ¼</div><div id='all-game-count'></div></div></div>
+                <div class='game-contents-title-right'>
+                    <div class='reg-rate'>
+                        <a href='game_edit.php?mode=edit&bbs_num=13704' class='flex-div'><div class='plus-white-svg'></div><div>Á¤º¸ Ãß°¡ ¹× ¼öÁ¤</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-expansion-0' class='category-expansion' onclick='connectgame(0)'>ÀüÃ¼<span class='category-count'></span></li>
+                        <li id='category-expansion-1' class='category-expansion' onclick='connectgame(1)'>º»ÆÇ<span class='category-count'></span></li>
+                        <li id='category-expansion-2' class='category-expansion' onclick='connectgame(2)'>È®Àå<span class='category-count'></span></li>
+                        <li id='category-expansion-3' class='category-expansion' onclick='connectgame(3)'>ÅëÇÕ °¡´É °ÔÀÓ<span class='category-count'></span></li>
+                        <li id='category-expansion-4' class='category-expansion' onclick='connectgame(4)'>¿øÀÛ<span class='category-count'></span></li>
+                        <li id='category-expansion-6' class='category-expansion' onclick='connectgame(6)'>Àç±¸Çö<span class='category-count'></span></li>
+                        <li id='category-expansion-5' class='category-expansion' onclick='connectgame(5)'>Æ÷ÇÔµÈ °ÔÀÓ<span class='category-count'></span></li>
+                        <li id='category-expansion-7' class='category-expansion' onclick='connectgame(7)'>ÀÌ °ÔÀÓÀ»<br/>Æ÷ÇÔÇÑ °ÔÀÓ<span class='category-count'></span></li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-expansion' class='game-contents-right-div'>
+                    <!-- <div class='no-game-contents-data no-expansion-data display-none'>ÀÚ·á°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div> -->
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+        </div>
+        <!-- ¼îÇÎ -->
+        <div id='game-shopping-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>¼îÇÎ</div>
+        </div>
+        <!-- Áß°í -->
+        <div id='game-used-box' class='div-contents game-contents-div'>
+            <div class='game-contents-title'>
+                <div class='game-contents-title-left game-contents-title-used'>Áß°í</div>
+                <div class='game-contents-title-right'>
+                    <div class="dropdown">
+                    
+                        <!-- <div class='reg-rate' id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class='plus-white-svg'></div><div>ÀåÅÍ ÀÛ¼º</div>
+                        </div> -->
+                        
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="javascript:void(0);">ÆÇ¸Å</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">±¸¸Å</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">±³È¯</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">³ª´®</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='flex'>
+                <div class='game-contents-div-menu'>
+                    <ul>
+                        <li id='category-used-0' class='category-used' onclick='loadused(0)'>ÀüÃ¼<span id='category-used-count-0' class='category-count'>0</span></li>
+                        <li id='category-used-1' class='category-used' onclick='loadused(1)'>ÆÇ¸Å<span id='category-used-count-1' class='category-count'>0</span></li>
+                        <li id='category-used-2' class='category-used' onclick='loadused(2)'>±¸¸Å<span id='category-used-count-2' class='category-count'>0</span></li>
+                        <li id='category-used-3' class='category-used' onclick='loadused(3)'>±³È¯<span id='category-used-count-3' class='category-count'>0</span></li>
+                        <li id='category-used-4' class='category-used' onclick='loadused(4)'>³ª´®<span id='category-used-count-4' class='category-count'>0</span></li>
+                    </ul>
+                </div>
+                <div id='game-contents-div-used' class='game-contents-right-div'>
+                    <div class='no-game-contents-data no-used-data display-none'>ÀÛ¼º±ÛÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.</div>
+                </div>
+                <!-- google-ad-game-right-wrapper -->
+            </div>
+            
+        </div>
+    </div>
+    <div id="main-bmarket-wrapper">
+        <div id="main-bmarket-list">
+        </div>
+        <!-- <div style=" position: sticky; top:120px;"> -->
+            <!-- 160-600-boardlife -->
+            <!-- {{banner_pc_right2} } -->
+        <!-- </div> -->
+    </div>
+</div>
+
+</div>
+
+
+		<script language="javascript">
+			<!--
+				function bbsdel(strURL, short_number) {
+
+					var ismember	= '';
+					var admin_check	= '';
+
+					if ( ismember == '' && admin_check == '' && short_number != undefined )
+					{
+						obj = document.getElementById('nonmember_pass_' + short_number);
+						if ( obj.style.display == 'block' )
+						{
+							obj.style.display = 'none';
+							document.getElementById('password_input_' + short_number).value = '';
+							return;
+						}
+						else
+						{
+							obj.style.display = 'block';
+							alert('ÆÐ½º¿öµå¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+							document.getElementById('password_input_' + short_number).focus();
+							return;
+						}
+					}
+					else
+					{
+						var id	= '';
+
+						var msg = "»èÁ¦ÇÏ½Ã°Ú½À´Ï±î?";
+						if (confirm(msg)){
+							window.location.href= strURL + '&id=' + id + '&delivery=' + '';
+						}
+					}
+				}
+
+				function bbsdel2(strURL, short_number) {
+
+					var ismember	= '';
+					var admin_check	= '';
+
+					if ( ismember == '' && admin_check == '' && short_number != undefined )
+					{
+						obj = document.getElementById('nonmember_pass_' + short_number);
+						if ( obj.style.display == 'block' )
+						{
+							obj.style.display = 'none';
+							document.getElementById('password_input_' + short_number).value = '';
+							return;
+						}
+						else
+						{
+							obj.style.display = 'block';
+							alert('ÆÐ½º¿öµå¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+							document.getElementById('password_input_' + short_number).focus();
+							return;
+						}
+					}
+					else
+					{
+						var id	= '';
+
+						var msg = "Æ÷½ºÆ®¸¦ »èÁ¦ÇÏ½Ã°Ú½À´Ï±î? \n \nÅ¸ À¯Àú°¡ ÀÛ¼ºÇÑ Æ÷½ºÆÃÀÌ Æ÷ÇÔµÈ °æ¿ì »èÁ¦°¡ ºÒ°¡ÇÕ´Ï´Ù.";
+						if (confirm(msg)){
+
+
+							window.location.href= strURL + '&id=' + id + '&delivery=' + '';
+
+						}
+					}
+				}
+
+				function bbsdel3(strURL, short_number) {
+
+					var ismember	= '';
+					var admin_check	= '';
+
+
+
+					if ( ismember == '' && admin_check == '' && short_number != undefined )
+					{
+						obj = document.getElementById('nonmember_pass_' + short_number);
+						if ( obj.style.display == 'block' )
+						{
+							obj.style.display = 'none';
+							document.getElementById('password_input_' + short_number).value = '';
+							return;
+						}
+						else
+						{
+							obj.style.display = 'block';
+							alert('ÆÐ½º¿öµå¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+							document.getElementById('password_input_' + short_number).focus();
+							return;
+						}
+					}
+					else
+					{
+						var id	= '';
+
+						var msg = "Æ÷½ºÆÃÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?";
+						if (confirm(msg)){
+
+
+							window.location.href= strURL + '&id=' + id + '&delivery=' + '';
+
+						}
+					}
+				}
+				-->
+			</script>
+			
+
+
+		</div>
+		<div class='mt-5 mb-5'>
+			<!-- boardlife-fix-970-90 -->
+			<!-- { {banner_pc_bottom} } -->
+		</div>
+	</div>
+	<!--Ä«ÇÇ¶óÀÌÅÍ ½ÃÀÛ-->
+	
+<div class='contents-wrapper'>
+    <div class="google-ad mb-2">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4408063067096338" crossorigin="anonymous"></script>
+		<!-- boost-bottom -->
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:1200px;height:350px"
+			data-ad-client="ca-pub-4408063067096338"
+			data-ad-slot="4866560435"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+		</script></div>
+    <!-- <div class='google-ad' style="margin:10px 0 20px">
+        728-90-boardlife
+        
+    </div> -->
+</div>
+<div class='bottom-copyright-wrapper'>
+    <div class='bottom-copyright'>
+        <div class='bottom-copyright-row1'>
+            <div><a href='bbs_list.php?tb=board_notice'>°øÁö»çÇ×</a></div>
+        </div>
+        <div class='bottom-copyright-row2'>
+            <div><a href='javascript:void(0)' onclick="company()">È¸»çÁ¤º¸</a></div>
+            <div><a href='html_file.php?file=stipulation02.html&file2=default3.html'>¼­ºñ½º ¾à°ü/Á¤Ã¥</a></div>
+            <div><a href='html_file.php?file=stipulation01.html&file2=default3.html'>°³ÀÎÁ¤º¸Ãë±Þ¹æÄ§</a></div>
+            <div><a href='html_file.php?file=stipulation04.html&file2=default3.html'>Ä¿¹Â´ÏÆ¼ ±ÔÄ¢</a></div>
+            <div><a href='sponsorad.php'>±¤°í¼¾ÅÍ</a></div>
+            <div><a href='html_file.php?file=fund.html&file2=default_fund.html'>¼³¸³ÈÄ¿øÀÚ</a></div>
+        </div>
+        <div id='company-info' class='display-none'>
+            <div>È¸»ç¸í: º¸µå¶óÀÌÇÁ</div>
+            <div>°æ±âµµ ±¸¸®½Ã ¾ÆÂ÷»ê·Î506¹ø±æ 27 7Ãþ 705È£</div>
+            <div>»ç¾÷ÀÚµî·Ï¹øÈ£: 893-07-00060</div>
+            <div>´ëÇ¥ÀÚ¸í: °ûÀç¿µ</div>
+            <div>°í°´Áö¿ø : boardlifeTeam@gmail.com</div>
+        </div>
+        <div class='bottom-copyright-row3'>
+            Copyright ¨Ï 2021 º¸µå°ÔÀÓ Ä¿¹Â´ÏÆ¼ º¸µå¶óÀÌÇÁ All rights reserved.
+        </div>
+    </div>
+</div>
+
+<div id="blank-bg" class="display-none"></div>
+<div id="alert-box" class="display-none">
+    <div id="alert-message"></div>
+</div>
+
+<!-- newsletter Modal -->
+<div class="modal fade" id="newletter-modal" tabindex="-1" aria-labelledby="newletter-modal-Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title flex-div" id="newletter-modal-Label">
+            <div class="newspaper-svg xsm me-2"></div>
+            º¸µå¶óÀÌÇÁ ´º½º·¹ÅÍ ±¸µ¶
+        </h5>
+        </div>
+        <div class="modal-body">
+            <div id="newletter-modal-text"></div>
+            <div id="email-form-div"><input type="text" id="new-email" placeholder="ÀÌ¸ÞÀÏ ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä" onkeyup="inputEmailformat(this);" oninput="this.value = this.value.replace(/[¤¡-¤¾|¤¿-¤Ó|°¡-ÆR]/g, '')" autocomplete="off"/></div>
+        </div>
+        <div id="modal-footer-div" class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">´Ý±â</button> -->
+          <button type="button" id="newletter-change-finish-btn" class="btn btn-primary" onclick="emailChangeReg()">º¯°æ ¿Ï·á</button>
+          <button type="button" id="newletter-cancel-btn" class="btn btn-secondary" onclick="newsletterInit()">Ãë¼Ò</button>
+          <button type="button" id="newletter-change-btn" class="btn btn-danger" onclick="emailChange()">ÀÌ¸ÞÀÏ º¯°æ</button>
+          <button type="button" id="newletter-reg-btn" class="btn btn-primary" onclick="newsletterOk()">±¸µ¶</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- ÁÖ¼ÒÃ¢ Modal -->
+<div class="modal fade" id="addr-modal" tabindex="-1" aria-labelledby="addr-modal-Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title nanum" id="addr-modal-Label">ÁÖ¼Ò °Ë»ö</h5>
+        </div>
+        <div id="addr-modal-kako" class="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ÈÞ´ëÆù ÀÎÁõ Modal -->
+<div class="modal fade" id="hp-verify-modal" tabindex="-1" aria-labelledby="hp-verify-Label" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title nanum" id="hp-verify-Label">ÈÞ´ëÆù ÀÎÁõ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input id="my-hp-number" class="form-control form-control-lg" type="text" placeholder="ÈÞ´ëÆù ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä." aria-label=".form-control-lg" autocomplete="off" onkeyup="inputhpformat(this); getphoneLength(this.value)" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <div id="hp-verify-check-btn" class="hp-verify-btn btn mt-3 disabled">ÀÎÁõ ¹øÈ£ ¹Þ±â</div>
+            <input id="verify-code-input" class="form-control form-control-lg mt-3 display-none" type="text" maxlength="6" placeholder="ÀÎÁõ¹øÈ£ 6ÀÚ¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä." aria-label=".form-control-lg" autocomplete="off" onkeyup="inputHpchecklength(this)" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <div id="hp-verify-confirm-btn" class="hp-verify-btn btn mt-3 display-none disabled" >ÀÎÁõ ¿Ï·á</div>
+            <div id="wrong-hp-text" class="danger mt-3 display-none">ÈÞ´ëÆù ¹øÈ£¸¦ ´Ù½Ã È®ÀÎÇØ ÁÖ¼¼¿ä.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <script>
+    
+	// ´º½º·¹ÅÍ ±¸µ¶
+    function regNewsLetter(){
+        newsletterInit();
+        $.ajax({
+			url: `get_user_data.php`,
+			method: "POST",
+			data:{
+				'action' 		: 'newsletter'
+			},
+			async: true,
+			beforeSend: function () {
+				
+			},
+			success: function (res) {
+				let data = JSON.parse(res)[0];
+                let state = data.result;
+                let email = data.email;
+                let text = document.getElementById(`newletter-modal-text`);
+                let regBtn = document.getElementById(`newletter-reg-btn`);
+                let alertText = '';
+                if(state == 'already'){
+                    $('#newletter-modal').modal('show');
+                    text.innerHTML = `<span class='bold'>${email}</span> ¸ÞÀÏ·Î ´º½º·¹ÅÍ¸¦ ±¸µ¶ÇÏ°í ÀÖ½À´Ï´Ù.`;
+                    regBtn.innerHTML = `±¸µ¶Ãë¼Ò`;
+                    regBtn.setAttribute(`onclick`,`newsletterCancel()`);
+                    regBtn.classList.remove(`btn-primary`);
+                    regBtn.classList.add(`btn-secondary`);
+                }else if(state == 'yet'){
+                    $('#newletter-modal').modal('show');
+                    text.innerHTML = `<span class='bold'>${email}</span> ¸ÞÀÏ·Î ´º½º·¹ÅÍ¸¦ ±¸µ¶ÇÒ±î¿ä?`;
+                    regBtn.innerHTML = `±¸µ¶`;
+                    regBtn.setAttribute(`onclick`,`newsletterOk()`);
+                    regBtn.classList.add(`btn-primary`);
+                    regBtn.classList.remove(`btn-secondary`);
+                }else{
+                    $('#newletter-modal').modal('show');
+                    text.innerHTML = `ÇöÀç °èÁ¤¿¡ ¸ÞÀÏ Á¤º¸°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.<br/>ÀÌ¸ÞÀÏ º¯°æ ¹öÆ°À» Å¬¸¯ÇØ ÀÌ¸ÞÀÏ Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.`;
+                }
+
+				xhr: /*@cc_on false && @*/window.XMLHttpRequest ?
+				function() { return new window.XMLHttpRequest(); } :
+				function() {
+					try { return new window.ActiveXObject("Microsoft.XMLHTTP"); }
+					catch(e) {}
+				}
+				// setTimeout(autoSearch, 1000);
+			},
+			error: function(e) { 
+				alert("Àß¸øµÈ ÆäÀÌÁö·Î Á¢±ÙÇÏ¿´½À´Ï´Ù."); 
+			}
+		});
+		
+	}
+
+    function newsletterInit(){
+        let text = document.getElementById(`newletter-modal-text`);
+        let form = document.getElementById(`email-form-div`);
+        let finishBtn = document.getElementById(`newletter-change-finish-btn`);
+        let changeBtn = document.getElementById(`newletter-change-btn`);
+        let regBtn = document.getElementById(`newletter-reg-btn`);
+        let cancelBtn = document.getElementById(`newletter-cancel-btn`);
+        text.classList.remove(`display-none`);
+        changeBtn.classList.remove(`display-none`);
+        regBtn.classList.remove(`display-none`);
+
+        form.classList.add(`display-none`);
+        finishBtn.classList.add(`display-none`);
+        cancelBtn.classList.add(`display-none`);
+        
+        
+    }
+    function emailChange(){
+        let text = document.getElementById(`newletter-modal-text`);
+        let form = document.getElementById(`email-form-div`);
+        let finishBtn = document.getElementById(`newletter-change-finish-btn`);
+        let changeBtn = document.getElementById(`newletter-change-btn`);
+        let regBtn = document.getElementById(`newletter-reg-btn`);
+        let cancelBtn = document.getElementById(`newletter-cancel-btn`);
+       
+        finishBtn.setAttribute('disabled','disabled');
+
+        text.classList.add(`display-none`);
+        changeBtn.classList.add(`display-none`);
+        regBtn.classList.add(`display-none`);
+
+        form.classList.remove(`display-none`);
+        finishBtn.classList.remove(`display-none`);
+        cancelBtn.classList.remove(`display-none`);
+    }
+
+    function emailChangeReg(){
+        let email = document.getElementById(`new-email`).value;
+        $.ajax({
+			url: `get_user_data.php`,
+			method: "POST",
+			data:{
+				'action' 		: 'emailChangeReg',
+                'email'         : email
+			},
+			async: true,
+			beforeSend: function () {
+				
+			},
+			success: function (res) {
+				regNewsLetter();
+				xhr: /*@cc_on false && @*/window.XMLHttpRequest ?
+				function() { return new window.XMLHttpRequest(); } :
+				function() {
+					try { return new window.ActiveXObject("Microsoft.XMLHTTP"); }
+					catch(e) {}
+				}
+				// setTimeout(autoSearch, 1000);
+			},
+			error: function(e) { 
+				alert("Àß¸øµÈ ÆäÀÌÁö·Î Á¢±ÙÇÏ¿´½À´Ï´Ù."); 
+			}
+		});
+        
+    }
+
+    function newsletterOk(){
+        $.ajax({
+			url: `get_user_data.php`,
+			method: "POST",
+			data:{
+				'action' 		: 'newsletterOk'
+			},
+			async: true,
+			beforeSend: function () {
+				
+			},
+			success: function (res) {
+                $('#newletter-modal').modal('hide');
+				alertBox('´º½º·¹ÅÍ ±¸µ¶ ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.', '', 2000);
+				xhr: /*@cc_on false && @*/window.XMLHttpRequest ?
+				function() { return new window.XMLHttpRequest(); } :
+				function() {
+					try { return new window.ActiveXObject("Microsoft.XMLHTTP"); }
+					catch(e) {}
+				}
+				// setTimeout(autoSearch, 1000);
+			},
+			error: function(e) { 
+				alert("Àß¸øµÈ ÆäÀÌÁö·Î Á¢±ÙÇÏ¿´½À´Ï´Ù."); 
+			}
+		});
+    }
+
+    function newsletterCancel(){
+        let Alert = confirm('´õ ÀÌ»ó º¸µå°ÔÀÓ°ú °ü·ÃµÈ »õ·Î¿î Á¤º¸¸¦ ¹Þ¾Æº¼ ¼ö ¾ø½À´Ï´Ù.\nº¸µå¶óÀÌÇÁ ´º½º·¹ÅÍ ±¸µ¶À» Ãë¼ÒÇÒ±î¿ä?');
+        if(Alert){
+            $.ajax({
+                url: `get_user_data.php`,
+                method: "POST",
+                data:{
+                    'action' 		: 'newsletterCancel'
+                },
+                async: true,
+                beforeSend: function () {
+                    
+                },
+                success: function (res) {
+                    $('#newletter-modal').modal('hide');
+                    alertBox('´º½º·¹ÅÍ ±¸µ¶ÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù.', '', 2000);
+                    xhr: /*@cc_on false && @*/window.XMLHttpRequest ?
+                    function() { return new window.XMLHttpRequest(); } :
+                    function() {
+                        try { return new window.ActiveXObject("Microsoft.XMLHTTP"); }
+                        catch(e) {}
+                    }
+                    // setTimeout(autoSearch, 1000);
+                },
+                error: function(e) { 
+                    alert("Àß¸øµÈ ÆäÀÌÁö·Î Á¢±ÙÇÏ¿´½À´Ï´Ù."); 
+                }
+            });
+        }else{
+            $('#newletter-modal').modal('hide');
+        }
+        
+    }
+
+    function inputEmailformat(obj){
+        // console.log(obj.value);
+        let finishBtn = document.getElementById(`newletter-change-finish-btn`);
+        let regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (regExp.test(obj.value)) {
+            //Á¤±Ô½Ä ÃæÁ·
+            finishBtn.removeAttribute('disabled');
+        }
+    }
+
+    let alertBoxClear = ''
+    function alertBox(text, type, time=``){
+        alertBoxStart(text, type);
+        let ShowTime = time == '' ? 1000 : time;
+        alertBoxClear = setTimeout(alertBoxEnd, ShowTime);
+    }
+
+
+    function alertBoxStart(text, type){
+        let alertBox = document.getElementById('alert-box');
+        let message = document.getElementById('alert-message');
+        let bg = document.getElementById(`blank-bg`);
+        if(type == 'error'){
+            IdAddClass(`alert-box`,`error`);
+        }
+        bg.classList.remove('display-none');
+        alertBox.classList.remove('display-none');
+        message.innerHTML = text;
+    }
+
+    function alertBoxEnd(){
+        let bg = document.getElementById(`blank-bg`);
+        let alertBox = document.getElementById('alert-box');
+        bg.classList.add('display-none');
+        alertBox.classList.add('display-none');
+        IdRemoveClass(`alert-box`,`error`);
+        clearTimeout(alertBoxClear);
+    }
+</script>
+<!-- Bottom Modal -->
+<!-- °ÔÀÓ ¼¿·ºÅÍ boardgameSelector Modal -->
+<div class="modal fade modal-user-data" id="boardgame-selector" tabindex="-1" aria-labelledby="boardgame-selector-modal-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div flex-1" id="boardgame-selector-modal-Label">
+          <div class="meeple-svg title me-2"></div>
+          º¸µå°ÔÀÓ ¼±ÅÃ
+        </h5>
+        <h5 class="modal-title bottom-modal-title flex-div flex-1 selected-boardgame-div display-none">
+          ¼±ÅÃÇÑ °ÔÀÓ<span class="selected-game-count-span ms-2"><span id="selected-game-count">1</span>°³ ¼±ÅÃ</span>
+        </h5>
+      </div>
+      <div class="modal-body boardgame">
+        <div class="flex">
+          <div class="flex-1">
+            <div class="flex">
+              <div id="boardgame-selector-window">
+                  <div class="close-svg game-search" onclick="MobileGameSearchInit()"></div>
+                  <div class="flex-1"><input id="boardgame-selector-search-input" class="flex-1" type="text" placeholder="º¸µå °ÔÀÓ¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä" autocomplete="off"></div>
+              </div>
+            </div>
+            <div id="get-boardgame-seach-list"></div>
+          </div>
+          <div id="selected-board-game-wrapper" class="selected-boardgame-div flex-1 display-none">
+            <div id="selected-board-game"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ãë¼Ò</button>
+        <button id="select-Game-List-Submit-Btn" type="button" class="btn btn-primary" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- À¯Àú Á¤º¸ ¿É¼Ç Modal -->
+<div class="modal fade modal-user-data" id="pop-user-info" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="background"></div>
+      <div class="thumb"></div>
+      <div class="modal-body">
+        <div class="profile-box">
+          <div class="nick flex-div">
+            <div class="me-2">À¯Àú ´Ð³×´Ô</div>
+            <div class="arrow-more-svg deg-180"></div>
+          </div>
+          <div class="period">°¡ÀÔ±â°£</div>
+          <div class="flex-div write-info">
+            <div class="flex-1">
+              <div class="count">°Ô½Ã±Û ¼ö</div>
+              <div class="text">ÀÛ¼º °Ô½Ã±Û</div>
+            </div>
+            <div class="flex-1">
+              <div class="count">ÄÚ¸àÆ® ¼ö</div>
+              <div class="text">ÀÛ¼º ÄÚ¸àÆ®</div>
+            </div>
+          </div>
+        </div>
+        <div class="message-btn" onclick="PopMessage('id')">¸Þ¼¼Áö º¸³»±â</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ÂÊÁö Æû -->
+<div class="modal fade modal-user-data" id="message-send-pop" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div flex-1">
+          <div class="flex-div flex-1">
+            <div class="mail-line-svg svg-icon me-2"></div>
+            ÂÊÁö º¸³»±â
+          </div>
+          <div class='top-close-btn' onclick="PopMessageClose()">Ãë¼Ò</div>
+        </h5>
+      </div>
+      <div class="modal-body">
+        <div class="wrapper">
+          <div id="jjock-toNick" class="toNick flex-div">´Ð³×ÀÓ´Ô¿¡°Ô ¹ß¼Û</div>
+          <div class="textarea-box">
+            <textarea class="textarea-form" placeholder="¸Þ½ÃÁö¸¦ ÀÔ·ÂÇÏ¼¼¿ä."></textarea>
+          </div>
+          <div class="send-btn inactive">º¸³»±â</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- °Ô½Ã±Û Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-board" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="rate-game-modal-Label">
+          <div class="my-menu-write-svg title me-2"></div>
+          °Ô½Ã±Û ÀÛ¼º
+      </h5>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">³ªÀÇ ÃÖ±Ù ÀÛ¼º °Ô½ÃÆÇ</div>
+        <div id="my-recent-write-board"></div>
+        <a class="bottom-modal-write-btn mt-5" href="bbs_regist_simple.php">°Ô½ÃÆÇ ¼±ÅÃ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÆÈ·Î¿ì Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-follow" tabindex="-1" aria-labelledby="follow-game-modal-Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="follow-game-modal-Label">
+          <div class="menu-follow-svg title me-2"></div>
+          ³» ÆÈ·Î¿ì ¸®½ºÆ®
+        </h5>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">³»°¡ ÆÈ·Î¿ì ÁßÀÎ À¯Àú</div>
+          <div id="my-follow-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PIK ÇÈ Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-pics" tabindex="-1" aria-labelledby="bottom-modal-pics-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="bottom-modal-pics-Label">
+          <div class="camera-svg title me-2"></div>
+          º¸µå¶óÀÌÇÁ PIK ÀÛ¼º
+      </h5>
+      </div>
+      <div class="modal-body">
+        <form id="uploadForm-pics" enctype="multipart/form-data">
+          <div>
+              <div>
+                  <input type="text" name="game_id" id="selected-game-id-pics"/>
+                  <div id="bottom-modal-search-box-pics" class="bottom-modal-search-box">
+                    <!-- °ÔÀÓ°Ë»ö -->
+                  </div>
+              </div>
+              <div id="pik-img-upload-wrapper" class="display-none">
+                  <div id="PikimagePreviews"></div>
+                  <div id="PikdropArea" class="flex-div flex-center pointer" onclick="PikImgClick('Pikimginput')">
+                      <div class="flex-div flex-center flex-column">
+                          <div id="Pikimage-svg-icon"><div class="camera-svg big"></div></div>
+                          <p id="Pikimageguide">Å¬¸¯ÇØ »çÁøÀ» ¼±ÅÃÇÏ¼¼¿ä</p>
+                      </div>
+                  </div>
+                  <div>ÀÌ¹ÌÁö´Â ·£´ýÇÏ°Ô Ãâ·ÂµÇ¸ç ÃÖ´ë 10Àå±îÁö µî·ÏÇÒ ¼ö ÀÖ¾î¿ä.</div>
+                  <input name="img[]" type="file" id="Pikimginput" class="display-none" accept=".png, .jpg, .jpeg, .gif" multiple>
+              </div>
+          </div>
+          <div id="pik-text-div" class="display-none mt-3">
+              <textarea name="content" type="text" id="pik-text-input" class="auto-resize-textarea"
+              placeholder="³»¿ëÀº 10ÀÚ ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä."
+              maxlength="300" autocomplete="off"></textarea>
+              <div id="pik-text-limit"><span id="pik-text-Count">0</span> / 300ÀÚ</div>
+          </div>
+          <div id="pik-star-wrapper" class="mt-3 display-none">
+            <div class="flex-div flex-center">°ÔÀÓ ¸¸Á·µµ</div>
+            <div class="flex-div flex-center">
+              <div id="pik-star-div" class="star-rating">
+                <span class="star" data-value="1">¡Ú</span>
+                <span class="star" data-value="2">¡Ú</span>
+                <span class="star" data-value="3">¡Ú</span>
+                <span class="star" data-value="4">¡Ú</span>
+                <span class="star" data-value="5">¡Ú</span>
+              </div>
+            </div>
+            <div id="pik-star-guide" class="flex-div flex-center"></div>
+          </div>
+          <input id="pics-star-rate" type="text" class="display-none" name="rate" />
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" name="pics_play" role="switch" id="pics-play">
+            <label class="form-check-label" for="pics-play">¿À´Ã ÀÏÀÚ·Î PLAY¿¡ ÇÔ²² µî·ÏÇÏ±â</label>
+          </div>
+        </form>
+      </div>
+      <div id="modal-footer-div" class="modal-footer">
+        <!-- <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="InitPics()">ÃÊ±âÈ­</button> -->
+        <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="cancelBottmModal('pics')">Ãë¼Ò</button>
+        <button type="button" id="pik-reg-btn" class="btn btn-secondary" onclick="submitPik()" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- °ÔÀÓÆò Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-rate" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="rate-game-modal-Label">
+          <div class="menu-best-svg title me-2"></div>
+          °ÔÀÓÆò ÀÛ¼º
+      </h5>
+      </div>
+      <div class="modal-body">
+        <form id="uploadForm-rate" enctype="multipart/form-data">
+          <div>
+              <div>
+                  <input type="text" name="game_id" id="selected-game-id-rate" />
+                  <div id="bottom-modal-search-box-rate" class="bottom-modal-search-box">
+                    <!-- °ÔÀÓ°Ë»ö -->
+                  </div>
+              </div>
+          </div>
+          <div id="rate-star-wrapper" class="mt-3">
+            <div class="flex-div flex-center">°ÔÀÓ ÆòÁ¡</div>
+            <div class="flex-div flex-center">
+              <div id="pik-star-div" class="star-rating">
+                <span class="star" data-value="1">¡Ú</span>
+                <span class="star" data-value="2">¡Ú</span>
+                <span class="star" data-value="3">¡Ú</span>
+                <span class="star" data-value="4">¡Ú</span>
+                <span class="star" data-value="5">¡Ú</span>
+              </div>
+            </div>
+            <div id="pik-star-guide" class="flex-div flex-center"></div>
+          </div>
+          <div id="pik-text-div" class="mt-3">
+              <textarea name="content" type="text" id="rate-text-input" class="auto-resize-textarea"
+              placeholder="³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+              maxlength="300" autocomplete="off"></textarea>
+              <div id="pik-text-limit"><span id="pik-text-Count">0</span> / 300ÀÚ</div>
+          </div>
+          <input id="rate-star-rate" type="text" class="display-none" name="rate" />
+        </form>
+      </div>
+      <div id="modal-footer-div" class="modal-footer">
+        <!-- <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="InitPics()">ÃÊ±âÈ­</button> -->
+        <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="cancelBottmModal('rate')">Ãë¼Ò</button>
+        <button type="button" id="pik-reg-btn" class="btn btn-secondary" onclick="submitPik()" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÄÃ·º¼Ç Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-collect" tabindex="-1" aria-labelledby="collect-game-modal-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="collect-game-modal-Label">
+          <div class="menu-collect-svg title me-2"></div>
+          ÄÃ·º¼Ç µî·Ï
+      </h5>
+      </div>
+      <div class="modal-body">
+        <form id="uploadForm-collect" enctype="multipart/form-data">
+          <div>
+              <div>
+                  <input type="text" name="game_id" id="selected-game-id-collect" />
+                  <div id="bottom-modal-search-box-collect" class="bottom-modal-search-box">
+                    <!-- °ÔÀÓ°Ë»ö -->
+                  </div>
+              </div>
+          </div>
+          <div id="collect-star-wrapper" class="mt-3">
+            <div class="flex-div flex-center">°ÔÀÓ ÆòÁ¡</div>
+            <div class="flex-div flex-center">
+              <div id="pik-star-div" class="star-rating">
+                <span class="star" data-value="1">¡Ú</span>
+                <span class="star" data-value="2">¡Ú</span>
+                <span class="star" data-value="3">¡Ú</span>
+                <span class="star" data-value="4">¡Ú</span>
+                <span class="star" data-value="5">¡Ú</span>
+              </div>
+            </div>
+            <div id="pik-star-guide" class="flex-div flex-center"></div>
+          </div>
+          <div id="pik-text-div" class="mt-3">
+              <textarea name="content" type="text" id="collect-text-input" class="auto-resize-textarea"
+              placeholder="³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+              maxlength="300" autocomplete="off"></textarea>
+              <div id="pik-text-limit"><span id="pik-text-Count">0</span> / 300ÀÚ</div>
+          </div>
+          <input id="collect-star-rate" type="text" class="display-none" name="rate" />
+        </form>
+      </div>
+      <div id="modal-footer-div" class="modal-footer">
+        <!-- <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="InitPics()">ÃÊ±âÈ­</button> -->
+        <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="cancelBottmModal('collect')">Ãë¼Ò</button>
+        <button type="button" id="pik-reg-btn" class="btn btn-secondary" onclick="submitPik()" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÇÑÁÙÆò Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-brief" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="rate-game-modal-Label">
+          <div class="menu-brief-svg title me-2"></div>
+          ÇÑÁÙÆò ÀÛ¼º
+      </h5>
+      </div>
+      <div class="modal-body">
+        <form id="uploadForm-brief" enctype="multipart/form-data">
+          <div>
+              <div>
+                  <input type="text" name="game_id" id="selected-game-id-brief" />
+                  <div id="bottom-modal-search-box-brief" class="bottom-modal-search-box">
+                    <!-- °ÔÀÓ°Ë»ö -->
+                  </div>
+              </div>
+          </div>
+          <div id="brief-star-wrapper" class="mt-3">
+            <div class="flex-div flex-center">°ÔÀÓ ÆòÁ¡</div>
+            <div class="flex-div flex-center">
+              <div id="pik-star-div" class="star-rating">
+                <span class="star" data-value="1">¡Ú</span>
+                <span class="star" data-value="2">¡Ú</span>
+                <span class="star" data-value="3">¡Ú</span>
+                <span class="star" data-value="4">¡Ú</span>
+                <span class="star" data-value="5">¡Ú</span>
+              </div>
+            </div>
+            <div id="pik-star-guide" class="flex-div flex-center"></div>
+          </div>
+          <div id="pik-text-div" class="mt-3">
+              <textarea name="content" type="text" id="brief-text-input" class="auto-resize-textarea"
+              placeholder="³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+              maxlength="300" autocomplete="off"></textarea>
+              <div id="pik-text-limit"><span id="pik-text-Count">0</span> / 300ÀÚ</div>
+          </div>
+          <input id="brief-star-rate" type="text" class="display-none" name="rate" />
+        </form>
+      </div>
+      <div id="modal-footer-div" class="modal-footer">
+        <!-- <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="InitPics()">ÃÊ±âÈ­</button> -->
+        <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="cancelBottmModal('brief')">Ãë¼Ò</button>
+        <button type="button" id="pik-reg-btn" class="btn btn-secondary" onclick="submitPik()" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PLAY Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-play" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="rate-game-modal-Label">
+          <div class="menu-play-svg title me-2"></div>
+          PLAY ÀÛ¼º
+      </h5>
+      </div>
+      <div class="modal-body">
+        <form id="uploadForm-play" enctype="multipart/form-data">
+          <div>
+              <div>
+                  <input type="text" name="game_id" id="selected-game-id-play" />
+                  <div id="bottom-modal-search-box-play" class="bottom-modal-search-box">
+                    <!-- °ÔÀÓ°Ë»ö -->
+                  </div>
+              </div>
+          </div>
+          <div id="play-star-wrapper" class="mt-3">
+            <div class="flex-div flex-center">°ÔÀÓ ÆòÁ¡</div>
+            <div class="flex-div flex-center">
+              <div id="pik-star-div" class="star-rating">
+                <span class="star" data-value="1">¡Ú</span>
+                <span class="star" data-value="2">¡Ú</span>
+                <span class="star" data-value="3">¡Ú</span>
+                <span class="star" data-value="4">¡Ú</span>
+                <span class="star" data-value="5">¡Ú</span>
+              </div>
+            </div>
+            <div id="pik-star-guide" class="flex-div flex-center"></div>
+          </div>
+          <div id="pik-text-div" class="mt-3">
+              <textarea name="content" type="text" id="play-text-input" class="auto-resize-textarea"
+              placeholder="³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+              maxlength="300" autocomplete="off"></textarea>
+              <div id="pik-text-limit"><span id="pik-text-Count">0</span> / 300ÀÚ</div>
+          </div>
+          <input id="play-star-rate" type="text" class="display-none" name="rate" />
+        </form>
+      </div>
+      <div id="modal-footer-div" class="modal-footer">
+        <!-- <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="InitPics()">ÃÊ±âÈ­</button> -->
+        <button type="button" id="pik-cancel-btn" class="btn btn-secondary" onclick="cancelBottmModal('play')">Ãë¼Ò</button>
+        <button type="button" id="pik-reg-btn" class="btn btn-secondary" onclick="submitPik()" disabled>µî·Ï</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Áß°í Modal -->
+<div class="modal fade modal-user-data" id="bottom-modal-used" tabindex="-1" aria-labelledby="rate-game-modal-Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title bottom-modal-title flex-div" id="rate-game-modal-Label">
+          <div class="menu-used-svg title me-2"></div>
+          Áß°íÀåÅÍ ÀÛ¼º
+        </h5>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="mb-3 flex-div">
+            ³ªÀÇ ÃÖ±Ù ÀÛ¼º ÀåÅÍ °Ô½Ã±Û
+            <div class="ms-3"><a href='member.php?mode=write&tb=board_used' class="BTN">ÀüÃ¼º¸±â</a></div>
+          </div>
+          <div id="my-recent-write-used"></div>
+          <div class="mt-5 mb-3">»õ±Û ÀÛ¼ºÇÏ±â</div>
+          <div class="bottom-modal-used-btn-wrapper flex-div">
+            <a class="sell" href="bbs_regist.php?tb=board_used&b_category=ÆÇ¸Å">ÆÇ¸Å</a>
+            <a class="buy" href="bbs_regist.php?tb=board_used&b_category=±¸¸Å">±¸¸Å</a>
+            <a class="trade" href="bbs_regist.php?tb=board_used&b_category=±³È¯">±³È¯</a>
+            <a class="free" href="bbs_regist.php?tb=board_used&b_category=³ª´®">³ª´®</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script language="javascript" src="js/user_common.js?v=2023_08_05_24_50" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="js/sweetalert.js"></script>
+
+
+<!-- verifyPhone Modal -->
+<!-- ¸ð´ÞÀÌ ÀÛµ¿µÇÁö ¾ÊÀ» °æ¿ì fade Á¦°Å -->
+<div class="modal fade" id="verifyModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="verifyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content inno-modal-content pb-2">
+        <div class="modal-header inno-header-black">
+          <h5 class="modal-title inno-modal-title flex-div NotoMedium flex-1" id="itemaddLabel">
+              <div class="inno-logo-icon-svg me-3"></div>
+              <div>ÇÁ·ÎÁ§Æ® ¿ÀÇÂ ¾Ë¸² ½ÅÃ»</div>
+          </h5>
+          <div>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopTimer()"></button> -->
+              <div class="modal-close-svg pointer" data-bs-dismiss="modal" aria-label="Close" onclick="stopTimer()"></div>
+          </div>
+        </div>
+        <img src="img/twom_main_banner.jpg" />
+        <div class="modal-body project-input-form">
+        
+        <input id="verify-phone-input" type="text" class="form-control" placeholder="ÀÎÁõÇÏ½Ç ÈÞ´ëÆù ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä." autocomplete="off" onkeyup="inputhpformat(this); getphoneLength(this.value)" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="13">
+        <div id="verify-guide" class="flex-div mt-3">
+            <div class="megaphone-svg me-2"></div>
+            <div class="project-color-guide">ÈÞ´ëÆù ¹øÈ£¸¦ ÀÔ·Â ÈÄ ÀÎÁõ¹øÈ£ ¹Þ±â ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä.</div>
+            </div>
+            <div id="verify-guide-wrong" class="flex-div mt-3 display-none">
+                <div class="megaphone-svg danger me-2"></div>
+                <div class="danger">ÀÔ·ÂÇÏ½Å ÈÞ´ëÆù ¹øÈ£¸¦ ´Ù½Ã È®ÀÎÇØ ÁÖ¼¼¿ä.</div>
+            </div>
+        <div id="verify-receive-btn" class="mt-3 verify-receive-btn display-none" onclick="codeReceive()">
+            ÀÎÁõ¹øÈ£ ¹Þ±â
+        </div>
+        <div id="verify-receive-aleady" class="mt-3 verify-receive-btn display-none" onclick="closeVerifyModal()">
+          ÀÌ¹Ì ¾Ë¸²À» ½ÅÃ»ÇÏ¼Ì½À´Ï´Ù.
+      </div>
+        <div id="verify-receive-wrapper" class="flex-div display-none">
+            <div class="flex-1">
+                <input id="verify-receive-input" type="text" maxlength="6" class="form-control mt-3" placeholder="ÀÎÁõ¹øÈ£ 6ÀÚ¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä." autocomplete="off" onkeyup="getVerifyLength(this.value); inputOnlyNumber(this)" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            </div>
+            <div id="verify-timer" class="mt-3">
+                <!-- Ä«¿îÆ® -->
+            </div>
+            </div>
+        <div id="verify-confirm-btn" class="mt-3 verify-receive-btn display-none" onclick="codeconfirm()">
+            ½ÅÃ» ¿Ï·á
+        </div>
+        <div id="verify-confirm-alert"></div>
+        </div>
+        <div id="inno-alarm-guide">
+            <div class="inno-alarm-guide-row"><span class="bullet-svg"></span>ºñÈ¸¿øµµ ¿ÀÇÂ ¾Ë¸² ½ÅÃ»ÀÌ °¡´ÉÇÕ´Ï´Ù.</div>
+            <!-- <div class="inno-alarm-guide-row"><span class="bullet-svg"></span>È¸¿ø °èÁ¤À¸·Î ¿ÀÇÂ ¾Ë¸²À» ½ÅÃ»ÇÏ½Å °æ¿ì º°µµÀÇ ÇÒÀÎÀÌ Àû¿ëµÉ ¼ö ÀÖ½À´Ï´Ù.</div> -->
+            <div class="inno-alarm-guide-row"><span class="bullet-svg"></span>ÇÁ·ÎÁ§Æ®°¡ ¿ÀÇÂµÇ¸é º¸µå¶óÀÌÇÁ ¾Ë¸²°ú ¹®ÀÚ¸Þ½ÃÁö¸¦ ÅëÇØ ¾Ë·Áµå¸³´Ï´Ù.</div>
+            <div class="inno-alarm-guide-row"><span class="bullet-svg"></span>¼ÒÁßÇÑ °³ÀÎ Á¤º¸ÀÎ ÇÚµåÆù ¹øÈ£´Â ¾Ë¸²ÀÌ ¹ß¼ÛµÈ µÚ Áï½Ã »èÁ¦µË´Ï´Ù.</div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- verifyPhone Modal -->
+
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="game-data-rate" data-bs-backdrop="static" tabindex="-1" aria-labelledby="game-data-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="game-data-title">°ÔÀÓÆò µî·ÏÇÏ±â</h5>
+			</div>
+			<div class="modal-body" id='game-data-body'>
+				<div class="flex-div">
+					<div class='play-private'>
+					<input type='text' name='rating' value='' autocomplete="off" id='star2_input' onkeyup='ratenew(this.value)' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+					</div>
+					<div>
+						<div class="flex-div">
+							<div id='rateing-box-title'>·¹ÀÌÆÃ ¼³¸í</div>
+							<div id="alert-rating-rate" class="danger ms-3 display-none">º°Á¡À» ¼±ÅÃÇÏ¼¼¿ä.</div>
+						</div>
+						<div id="rating-star"></div>
+					</div>	
+				</div>
+				
+				<div id='rateing-box'>
+                    <div><textarea  id='rateing-text' rows="5" cols="33" value='' placeholder="°ÔÀÓÆòÀ» ÀÔ·ÂÇÏ¼¼¿ä."></textarea></div>
+                    <div class='flex-div check-div-wrapper'>
+                        <div class='flex-div'>
+                            <div class='check-front'><input id='CB-have-coll' name='BChavecoll' type="checkbox" /></div>
+                            <div class='check-end'><label for='CB-have-coll'>º¸À¯°ÔÀÓÀ¸·Î ÇÔ²² µî·ÏÇÕ´Ï´Ù.</label></div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal" onclick="myRecordInit();">Ãë¼Ò</button>
+				<div id='rating-del-btn'></div>
+				<button type="button" id='myrecortBtn' class="btn btn-primary shadow-none" onclick="myRecoer(13704)">µî·Ï</button>
+			</div>
+		</div>
+		</div>
+		<script src="js/starrr.js"></script>
+        <script>
+			var $s3input = $('#star3_input');
+			var $s2input = $('#star2_input');
+			
+
+			$('#star3').starrr({
+				max: 10,
+				rating: $s3input.val(),
+				change: function(e, value){
+					$s3input.val(value).trigger('input');
+					$s2input.val(value).trigger('input');
+					GameRate(value);
+					document.getElementById("rating-star").innerHTML = `
+					<div class='starrr' id='star2'></div>
+					`;
+					$('#star2').starrr({
+						max: 10,
+						rating: $s3input.val(),
+						change: function(e, value){
+							$s2input.val(value).trigger('input');
+							document.getElementById('rateing-box-title').innerText = ratingValue(value);
+							if(value == undefined){
+								document.getElementById('alert-rating-rate').classList.remove('display-none');
+							}else{
+								document.getElementById('alert-rating-rate').classList.add('display-none');
+							}
+						}
+					});
+				}
+				
+			});
+			
+			function ratenew(value){
+				var $s2input = $('#star2_input');
+				$newvalue = parseInt(value);
+				// console.log($newvalue);
+				if($newvalue >= 1 && $newvalue <=10){
+					document.getElementById("rating-star").innerHTML = `<div class='starrr' id='star2'></div>`;
+					document.getElementById('rateing-box-title').innerText = ratingValue($newvalue);
+					$('#star2').starrr({
+						max: 10,
+						rating: $s2input.val(),
+						change: function(e, value){
+							$s2input.val(value).trigger('input');
+							
+						}
+					});
+				}else{
+					document.getElementById('rateing-box-title').innerText = "1 ~ 10Á¡ ±îÁö (¼Ò¼ö µÑÂ° ÀÚ¸®±îÁö ÀúÀå)";
+				}
+				
+				
+			}
+			
+			
+        </script>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="game-data-collect" data-bs-backdrop="static" tabindex="-1" aria-labelledby="game-data-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="game-data-title">ÄÃ·º¼Ç µî·ÏÇÏ±â</h5>
+			</div>
+			<div class="modal-body" id='game-data-body'>
+				<div class='check-div-wrapper'>
+					<div class='flex-div mb-3'>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-have' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-have'>º¸À¯°ÔÀÓ</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-fan' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-fan'>ÆÒµî·Ï</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-alert' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-alert'>±¸µ¶</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-wish' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-wish'>À§½Ã¸®½ºÆ®</label></div>
+						</div>
+					</div>
+					<div class='flex-div'>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-preorder' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-preorder'>¼±ÁÖ¹®</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-fund' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-fund'>ÆÝµù</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-enjoy' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-enjoy'>Áñ°Üº» °ÔÀÓ</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-owned' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-owned'>¹æÃâ °ÔÀÓ</label></div>
+						</div>
+						<div class='flex-div'>
+							<div class='check-front'><input id='CB-wantsell' type="checkbox" /></div>
+							<div class='check-end'><label for='CB-wantsell'>¹æÃâ ¿¹Á¤</label></div>
+						</div>
+					</div>
+				</div>
+				<div class='collection-private'>
+					<div class='collection-private-title'>°³ÀÎÁ¤º¸<span>°³ÀÎÁ¤º¸´Â ÀÚ½Å¸¸ È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.</span></div>
+					<div class='flex-div'>
+						<div class='flex-div'><div class='private-tag'>±¸¸ÅÃ³</div><div><input id='store' autocomplete="off" type="text" placeholder="±¸¸ÅÃ³ ÀÔ·Â"  value=''/></div></div>
+						<div class='flex-div' id='collection-private-store'></div>
+					</div>
+					<div class='flex-div'>
+						<div class='flex-div me-4'>
+							<div class='private-tag'>±Ý¾×</div>
+							<div><input id='price' type="text" placeholder="±¸¸Å°¡°Ý ÀÔ·Â" value='' autocomplete="off" onkeyup="inputNumberFormat(this)"/></div>
+						</div>
+						<div class='flex-div' style="position: relative;">
+							<div class='private-tag'>±¸¸ÅÀÏ</div><div><input id="datepicker" autocomplete="off" type="text" value='' placeholder="±¸¸ÅÀÏ ¼±ÅÃ"/></div>
+						</div>
+					</div>
+					<div class='private-tag'>°³ÀÎ ¸Þ¸ð</div>
+					<div><textarea  id='collect-text' rows="5" cols="33" value='' autocomplete="off" placeholder="°³ÀÎ ¸Þ¸ð¸¦ ÀÔ·ÂÇÏ¼¼¿ä."></textarea></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Ãë¼Ò</button>
+			<button type="button" id='mycollectBtn' class="btn btn-primary shadow-none" onclick='myCollect(13704)'>µî·Ï</button>
+			</div>
+		</div>
+		</div>
+		
+		<script>
+			$("#datepicker").datepicker({
+				language: 'ko',
+				autoClose: true
+			}); 
+		</script>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="game-data-play" data-bs-backdrop="static" tabindex="-1" aria-labelledby="game-data-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="game-data-title">PLAY µî·ÏÇÏ±â</h5>
+			<div><a href='member.php?mode=playlist'><button type="button" class="btn btn-success shadow-none">PLAY °ü¸®</button></a></div>
+			</div>
+			<div class="modal-body" id='game-data-body'>
+				<div class='play-private'>
+					<div class="flex">
+						<div id='play-box-title'>Àç¹Ìµµ¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.</div>
+						<div id='alert-play-rate' class="danger ms-2 display-none">¼±ÅÃÇØ ÁÖ¼¼¿ä.</div>
+					</div>
+				<div class='starrr' id='star'></div>
+				<input type='text' name='rating' value='' id='star_input' style='display:none'/>
+
+				<div class='flex-div mt-2'>
+					<div class='private-tag'>³¯Â¥</div>
+					<div><input type="text" id="datepicker2" autocomplete="off" placeholder="ÇÃ·¹ÀÌ ÀÏÀÚ ¼±ÅÃ" /></div>
+					<div id='alert-play-date' class="danger ms-2 display-none">³¯Â¥¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.</div>
+				</div>
+				
+				<div class='private-tag mt-2'>ÇÃ·¹ÀÌ ¼Ò°¨</div>
+				<div><textarea  id='play-comment' rows="5" cols="33" value='' placeholder="ÇÃ·¹ÀÌ ¼Ò°¨À» ÀÔ·ÂÇÏ¼¼¿ä."></textarea></div>
+				
+					<div class='play-private-title'>°³ÀÎÁ¤º¸<span>°³ÀÎÁ¤º¸´Â ÀÚ½Å¸¸ È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.</span></div>
+					<div class='flex-div'>
+						<div class='flex-div'><div class='private-tag'>Àå¼Ò</div><div><input id='play-place' type="text" autocomplete="off" placeholder="Àå¼Ò ÀÔ·Â"/></div></div>
+						<div class='flex-div' id='play-private-location'></div>
+					</div>
+					<div class='flex-div'>
+						<div class='flex-div me-4'>
+							<div class='private-tag'>ÇÃ·¹ÀÌ È¸¼ö</div>
+							<div><input type="text" id='play-count' placeholder="ÇÃ·¹ÀÌ È¸¼ö" autocomplete="off" value='1'/></div>
+						</div>
+						
+					</div>
+					<div class='private-tag'>°³ÀÎ ¸Þ¸ð</div>
+					<div><textarea  id='play-text' rows="5" cols="33" value='' autocomplete="off" placeholder="°³ÀÎ ¸Þ¸ð¸¦ ÀÔ·ÂÇÏ¼¼¿ä."></textarea></div>
+				</div>
+				<script>
+					$("#datepicker2").datepicker({
+						language: 'ko',
+						autoClose: true,
+						onSelect: function onSelect(fd, date) {
+							if(fd != ''){
+								document.getElementById('alert-play-date').classList.add('display-none');
+							}else{
+								document.getElementById('alert-play-date').classList.remove('display-none');
+							}
+						}
+					}); 
+				</script>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Ãë¼Ò</button>
+			<button type="button" class="btn btn-primary shadow-none" onclick='myPlay(13704)'>µî·Ï</button>
+			</div>
+		</div>
+		</div>
+		<script>
+            var $sinput = $('#star_input');
+            $('#star').starrr({
+            max: 5,
+            rating: $sinput.val(),
+            change: function(e, value){
+				
+                $sinput.val(value).trigger('input');
+				document.getElementById('play-box-title').innerText = playValue(value);
+
+				if(value == undefined){
+					document.getElementById('alert-play-rate').classList.remove('display-none');
+				}else{
+					document.getElementById('alert-play-rate').classList.add('display-none');
+				}
+            }
+            });
+        </script>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="member-data-login" tabindex="-1" aria-labelledby="member-login-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="member-login-title">È¸¿ø ÀÌ¿ë ¼­ºñ½º</h5>
+			</div>
+			<div class="modal-body" id='member-login-body'>
+				È¸¿ø¸¸ ÀÌ¿ëÀÌ °¡´ÉÇÑ ¼­ºñ½ºÀÔ´Ï´Ù.
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<script language='JavaScript' src="editor/happy_module/html5_image_upload/js/jquery-ui.1.12.1.js" type="text/javascript"></script>
+	<div class="modal fade" id="photomodal" tabindex="-1" aria-labelledby="photomodalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="photomodalLabel">°ÔÀÓ »çÁø µî·ÏÇÏ±â</h5>
+			<p class='ms-3'>ÇØ´ç °ÔÀÓ°ú °ü·ÃµÈ »çÁø Á¤º¸ º¸°ü¼Ò</p>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div id='photo-reg-div' class="modal-body">
+				<form name="html5_upload_frm" id="html5_upload_frm" method="post" enctype="multipart/form-data">
+					<div style="padding:10px 10px 0 10px">
+						<div style="position:relative">
+							<p style="padding-top:10px; line-height:150%">
+								- È®ÀåÀÚ°¡ JPG, JPEG, PNG ÆÄÀÏ¸¸ ¾÷·Îµå °¡´ÉÇÕ´Ï´Ù.<br/>
+								- ÆÄÀÏÃß°¡/¼±ÅÃ ÇÏ½Å ÈÄ ÀÌ¹ÌÁö¸¦ µå·¡±×ÇÏ¿© ¼ø¼­¸¦ ÁöÁ¤ÇÏ½Ã°í "µî·Ï" ¹öÆ°À» Å¬¸¯ÇØÁÖ¼¼¿ä.
+							</p>
+							<div id='not-include-image' class='danger'></div>
+							<div class="progress_num noto400 font_14" style="color:#919191; position:absolute; bottom:0px; right:0; ; text-align:right; display:none">
+								214KB/300KB
+							</div>
+						</div>
+						<div class="drapzone_fix">
+							<div style="width:100%; height:500px; position:relative; z-index:10">
+								<div  id="happy_upload_file_drop_zone_msg">
+									<div id="html5_no_browser" class="upload_clip_nohtml5">
+										ÇØ´ç ºê¶ó¿ìÁ®´Â ÀÌ¹ÌÁö µå·¡±× ¾÷·Îµå°¡ Áö¿øÇÏÁö ¾Ê´Â ºê¶ó¿ìÁ®ÀÔ´Ï´Ù.<br/>
+										º» ¿µ¿ªÀ» Å¬¸¯ÇÏ¿© ÆÄÀÏÀ» ¼±ÅÃÇÏ½Ã°Å³ª , ÇÏ´ÜÀÇ ÆÄÀÏÃß°¡ ¹öÆ°À» Å¬¸¯ÇÏ¿© ÀÌ¹ÌÁö¸¦ ¾÷·Îµå ÇØÁÖ¼¼¿ä.<br/>
+										<span style="color:#a3a3a3; font-size:14px" >(ÃÖ´ë 20ÀåÀÇ »çÁø¾÷·Îµå°¡ °¡´ÉÇÕ´Ï´Ù.)</span>
+									</div>
+									<div id="html5_browser" class="upload_clip_html5">
+										º» ¿µ¿ª¿¡ ÆÄÀÏÀ» µå·¡±×ÇÏ°Å³ª Å¬¸¯ÇÏ¿© ÆÄÀÏÀ» ¼±ÅÃÇÏ¼¼¿ä.<br/>
+										<span style="color:#a3a3a3; font-size:14px">(ÃÖ´ë 20ÀåÀÇ »çÁø¾÷·Îµå°¡ °¡´ÉÇÕ´Ï´Ù.)</span>
+									</div>
+									
+								</div>
+							</div>
+							<div style="position:absolute; width:100%; height:500px; top:0;">
+								<div style="height:100%;" id="sortable_out">
+									<div id="sortable" class="files" style="z-index:100; padding:18px 0; " onClick="dropbox_click(event);"></div>
+									<!-- The global progress state -->
+									<div class="progress_bar_field fileupload-progress fade">
+										<!-- The global progress bar -->
+										<div class="progress progress-striped " role="progressbar" aria-valuemin="0" aria-valuemax="100">
+											<div class="progress-bar progress-bar-success" style="width:0;"></div>
+										</div>
+										<!-- The extended global progress state -->
+										<div class="progress-extended noto400 font_14" style="display:none">&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fileupload-buttonbar">
+							<div class="upload_tool_btn text-left" style="position:relative">
+								<!-- The fileinput-button span is used to style the file input field as button -->
+								<div class="fileinput-button add_btn" style="vertical-align:middle" title="ÆÄÀÏÃß°¡">
+									ÆÄÀÏÃß°¡
+									<input type="file" name="files[]" id="happy_html5_file" multiple />
+								</div>
+				
+								<button type="button" class="delete choose_btn"  title="¼±ÅÃ»èÁ¦">¼±ÅÃ»èÁ¦</button>
+				
+								<label  style="letter-spacing:-1px; color:#434343; font-weight:normal; cursor:pointer">
+									<input type="checkbox" class="toggle" style="vertical-align:middle"/>
+									<span class="font_gulim" style="color:#636363; font-size:12px; font-family:'±¼¸²'; vertical-align:middle">¸ðµÎ¼±ÅÃ</span>
+								</label>
+				
+								<button type="submit" class="btn btn-primary start" style="display:none" id="html5_upload_btn">
+									<i class="glyphicon glyphicon-upload"></i>
+									<span>Start upload</span>
+								</button>
+								<button type="reset" class="btn btn-warning cancel" style="display:none">
+									<i class="glyphicon glyphicon-ban-circle"></i>
+									<span>Cancel upload</span>
+								</button>
+				
+								<!-- The global file processing state -->
+								<span class="fileupload-process"></span>
+							   
+							</div>
+							
+							<div class="upload_tool_submit">
+								<div class="btn-primary" onclick="editor_insert_img(13704,'')">
+									µî·Ï
+								</div>
+							</div>
+						</div>
+				
+					</div>
+			
+					<!-- 
+						ajax_reg_photo(); ½ÇÁ÷ÀûÀÎ ÀÌ¹ÌÁö µî·Ï
+						editor_insert_img ==> editor/happy_module/html5_image_upload/js/bora_multi_upload.js 
+					-->
+					<!-- ÀÌ¹ÌÁö ¼ÒÆÃ °á°úº¸±â ·¹ÀÌ¾î
+					<div id="sort_result">
+				
+					</div> -->
+				
+				
+					<script>
+					   
+						
+			
+			
+						function check_broswer () {
+							var word;
+							var agent			= navigator.userAgent.toLowerCase();
+				
+							if ( navigator.appName == "Microsoft Internet Explorer" ){		// IE old version ( IE 10 or Lower )
+								word			= "msie ";
+								var reg = new RegExp( word + "([0-9]{1,})(\\.{0,}[0-9]{0,1})" );
+								if (  reg.exec( agent ) != null  ) return parseFloat( RegExp.$1 + RegExp.$2 );
+							}
+							else
+							{
+								return 100;
+							}
+						}
+						var is_image_preload		= check_broswer();;
+						if( is_image_preload < 10 ){				//10 ÀÌÇÏ´Â html5 ÆÄÀÏ µå·¡±× ºÒ°¡.
+							$("#html5_browser").hide();
+						}
+						else{
+							$("#html5_no_browser").hide();
+						}
+						</script>
+				
+						<script id="template-upload" type="text/x-tmpl">
+						/*
+							ÀÚµ¿ ¾÷·Îµå µÇ´Â °æ¿ì´Â »ç¿ëµÇÁö ¾Ê½À´Ï´Ù.
+							ÀÚµ¿ ¾÷·Îµå¸¦ »ç¿ëÇÏÁö ¾ÊÀ» °æ¿ì ¾÷·Îµå ÇÏ±âÀü º¸¿©Áö´Â µðÀÚÀÎ ÇüÅÂÀÔ´Ï´Ù.
+							»èÁ¦ ÇÏÁö ¸¶½Ã°í ±×´ë·Î µÎ½Ã±â ¹Ù¶ø´Ï´Ù.
+						*/
+						{% for (var i=0, file; file=o.files[i]; i++) { %}
+							<div class="ui-state-default template-upload">
+								<div class="inner">
+									<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+									<span class="preview">
+									</span>
+									<strong class="error text-danger"></strong>
+						
+									<p class="name" style="display:none;">
+										<happy_upload_file_name id="{%=file.name%}"></happy_upload_file_name>
+									</p>
+									<p class="size" style="display:none;">Processing...</p>
+								{% if (!o.options.autoUpload && o.options.edit && o.options.loadImageFileTypes.test(file.type)) { %}
+									<button class="btn btn-success edit" data-index="{%=i%}" disabled>
+										<i class="glyphicon glyphicon-edit"></i>
+										<span>Edit</span>
+									</button>
+								{% } %}
+								{% if (!i && !o.options.autoUpload) { %}
+									<button class="btn btn-primary start" disabled style="position:absolute; bottom:0; display:none">
+										<i class="glyphicon glyphicon-upload"></i>
+										<span>Start</span>
+									</button>
+								{% } %}
+								{% if (!i) { %}
+									<button class="btn btn-warning cancel" style="position:absolute; bottom:20px; display:none">
+										<i class="glyphicon glyphicon-ban-circle"></i>
+										<span>Cancel</span>
+									</button>
+								{% } %}
+								</div>
+							</div>
+						{% } %}
+						</script>
+						
+						
+						<script id="template-download" type="text/x-tmpl">
+						/*
+							¾÷·Îµå ÈÄ º¸¿©Áö´Â µðÀÚÀÎ ÇüÅÂ ÀÔ´Ï´Ù.
+							ÇØ´ç ÄÚµå¸¦ µðÀÚÀÎÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.
+						*/
+						{% for (var i=0, file; file=o.files[i]; i++) { %}
+						
+								<div class="ui-state-default template-download" xtitle="Å¬¸¯ÇÏ¿© ÀÌ¹ÌÁöÈ®´ë">
+									<div class="inner">
+										<span class="preview">
+								{% if (file.thumbnailUrl) { %}
+											<!-- <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery> --><img src="{%=file.thumbnailUrl%}" style="border:1px solid #red" xonClick="happy_multi_modal_open('{%=file.url%}')"><!-- </a> -->
+								{% } %}
+										</span>
+								{% if (window.innerWidth > 480 || !file.thumbnailUrl) { %}
+										<p class="name" style="display:none;">
+											<happy_upload_file_name id="{%=file.name%}"></happy_upload_file_name>
+										</p>
+								{% } %}
+						
+								{% if (file.error) { %}
+										<div><span class="label label-danger">Error</span> {%=file.error%}</div>
+								{% } %}
+						
+										<!-- <span class="size">{%=o.formatFileSize(file.size)%}</span> -->
+						
+								{% if (file.deleteUrl) { %}
+										<button class="delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+											<i class="ico_trash2" title="ÀÌ¹ÌÁö»èÁ¦"></i>
+										</button>
+										<input type="checkbox" name="delete" value="1" class="toggle" title="Å¬¸¯½Ã ¼±ÅÃ">
+								{% } else { %}
+										<button class="btn btn-warning cancel">
+											<i class="glyphicon glyphicon-ban-circle"></i>
+											<span>Cancel</span>
+										</button>
+								{% } %}
+									</div>
+								</div>
+						
+						
+						{% } %}
+					</script>
+				
+				
+				
+				
+				
+					<!-- <script src="js/vendor/jquery.ui.widget.js"></script> -->
+					<script src="editor/happy_module/html5_image_upload/js/tmpl.min.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/load-image.all.min.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/jquery.iframe-transport.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/jquery.fileupload.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/jquery.fileupload-process.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/jquery.fileupload-image.js"></script>
+					<!-- <script src="editor/happy_module/html5_image_upload/js/jquery.fileupload-validate.js"></script> -->
+					<script src="editor/happy_module/html5_image_upload/js/jquery.fileupload-ui.js"></script>
+					<script src="editor/happy_module/html5_image_upload/js/bora_multi_upload.js"></script>
+					<script>
+						var one_mb_size				= 1024 * 1024;							//1MB
+						var max_file_size			= one_mb_size * 10;		//1°³ ÆÄÀÏÀÇ ÃÖ´ë¿ë·® ¼³Á¤(¼­¹öÀÇ ¼³Á¤¿¡ µû¸¦°Í) //one_mb_size * 20 = 20MB
+						//var max_file_size			= one_mb_size * 1;						//1°³ ÆÄÀÏÀÇ ÃÖ´ë¿ë·® ¼³Á¤(¼­¹öÀÇ ¼³Á¤¿¡ µû¸¦°Í) //one_mb_size * 20 = 20MB
+						var max_file_count			= 20;
+						var file_ext_types			= new Array("jpg","jpeg","png");	//¾÷·Îµå Çã¿ë È®ÀåÀÚ jpg, jpeg, gif, png ¸¸ Çã¿ëµÇ¸ç ±âÅ¸ È®ÀåÀÚ´Â Çã¿ëÇÏ´õ¶óµµ ½æ³×ÀÏ ¹ÌÁö »ý¼ºÀÌ µÇÁö ¾Ê½À´Ï´Ù.
+						var drop_zone_obj			= $("#sortable");	//µå·¡±×Á¸ ÀÔ´Ï´Ù.
+						var data_key_number			= '';
+						var form_name				= 'html5_upload_frm';
+						var upload_Handler			= "editor/happy_module/html5_image_upload/Html5_Image_Upload_Handler.php";
+						var upload_delay_time		= 300;
+						var editor_name				= 'bbs_review';
+						happy_multi_img_upload();
+					</script>
+				</form>
+			</div>
+			<!-- <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">´Ý±â</button>
+			<button type="button" class="btn btn-primary" >µî·Ï</button>
+			</div> -->
+		</div>
+		</div>
+	</div>
+	<!--Ä«ÇÇ¶óÀÌÅÍ ½ÃÀÛ-->
+	<!-- <div id="footer">
+		<div style="margin:0px auto; width:100%">
+			{ {ÇÏ´ÜÄ«ÇÇ¶óÀÌÆ®}}
+		</div>
+	</div> -->
+	
+	<!-- <script language="javascript" src="js/bootstrap.bundle.min.js" type="text/javascript" ></script>
+	<script language="JavaScript" src="js/coupon.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" src="js/mEmbed.js?v=2023_08_05_24_50"></script>
+	<script language="javascript" src="js/sub_tap.js?v=2023_08_05_24_50"></script>
+	<script language="javascript" src="js/cate_menupan.js?v=2023_08_05_24_50"></script>
+	<script language="javascript" src="js/happy_member.js?v=2023_08_05_24_50"></script>
+	<script language="javascript" src="js/change_menu.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script type="text/javascript" src="js/happy_main.js"></script>
+	<script language="javascript" src="js/default.js?v=2023_08_05_24_50"></script>
+	<script language="javascript" src="js/default_bora.js"></script> -->
+
+
+	<script language="javascript" src="js/mEmbed.js" type="text/javascript"></script>
+	<script language="javascript" src="js/happy_member.js" type="text/javascript"></script>
+	<script language="javascript" src="js/change_menu.js" type="text/javascript"></script>
+	<script language="javascript" src="js/sub_tap.js" type="text/javascript"></script>
+	<script language="javascript" src="js/bootstrap.bundle.min.js" type="text/javascript" defer="defer" ></script>
+	<script language="javascript" src="js/default.js" type="text/javascript"></script>
+	<script language="javascript" src="js/chart.js" type="text/javascript"></script>
+	<!-- <script language="javascript" src="js/defaultMain.js" type="text/javascript"></script> -->
+	<script language="javascript" src="js/default_bora.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" src="js/data_reg.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" src="js/boardgame.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" src="js/inno_ajax.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" src="js/analytics.js?v=2023_08_05_24_50" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="js/happy_main.js"></script>
+
+	<script>
+		
+		document.addEventListener("DOMContentLoaded", function(){
+			let load = NullCheck(getUrlParameter('load'));
+			let bbs_num = getUrlParameter('bbs_num');
+			call_game_data(load);
+			if(load == ''){
+				call_game_intro();
+				call_game_inno_project();
+			}
+			let game_thumb_view = document.getElementById('game_thumb_view').textContent;
+			let game_title = document.getElementById('boardgame-title').textContent;
+			let game_year = document.getElementById('game-rate-year').textContent;
+			set_view_game(bbs_num, game_title, game_thumb_view, game_year );
+
+			// CallBoost('top');
+			// CallBoost('wing');
+			// CallBoost('bottom');
+		});
+
+		function CheckForm(theForm)
+		{
+			var name_title	= new Array("È¸¿ø¾ÆÀÌµð¸¦", "È¸¿øºñ¹Ð¹øÈ£¸¦");
+			var name_name	= new Array("member_id", "member_pass");
+
+			for(var i in name_name)
+			{
+				if (document.getElementById(name_name[i]).value == "")
+				{
+					alert(name_title[i] + " ÀÔ·ÂÇÏ¼¼¿ä.");
+					document.getElementById(name_name[i]).focus();
+					return false;
+				}
+			}
+		}
+		
+		function happy_member_autologin()
+		{
+			if ( document.happy_member_login_form.save_login.checked == true )
+			{
+				var check;
+				check = confirm("¾ÆÀÌµð°¡ ÀÚµ¿ ÀúÀåµË´Ï´Ù.\nÅ¸ÀÎÀÌ °í°´´ÔÀÇ ¸ð¹ÙÀÏ·Î Á¢¼Ó½Ã ¾ÆÀÌµð°¡ ³ëÃâµÇ¿À´Ï ÁÖÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.");
+				if( check == false )
+				{
+					document.happy_member_login_form.save_login.checked = false;
+					document.happy_member_login_form.save_id.value = 'n';
+				}
+				else if ( check == true )
+				{
+					document.happy_member_login_form.save_id.value = 'y';
+				}
+
+			}
+			else
+			{
+				document.happy_member_login_form.save_id.value = 'n';
+			}
+		}
+		
+		// Â÷Æ®¸¦ ±×¸®ÀÚ
+		const playerChart = new Chart(
+			document.getElementById('playerRecommendChart'),
+			{
+			type: 'bar',
+			data: {
+			labels: ['·ÎµùÁß', '·ÎµùÁß', '·ÎµùÁß', '·ÎµùÁß'],
+			datasets: [{
+				label: '·ÎµùÁß',
+				data: [0, 0, 0, 0],
+				borderColor: 'grey',
+      			backgroundColor: 'grey',
+				borderWidth: 1
+			}
+			]
+			},
+			options: {
+				responsive: true,
+				plugins: {
+					legend: {
+						display: false
+					},
+					title: {
+						display: false
+					},
+					tooltip: {
+						enabled: false // <-- this option disables tooltips
+					}
+				},
+				scales: {
+					y: {
+					ticks: {
+						display: false
+					}
+                	}
+            	},
+			}
+			
+		});
+		
+	</script>
+	
+</body>
+</html>
+<!-- {{°Ô½ÃÆÇ´ñ±Û¾Ë¸²} }
+{{cgialert} } -->
+<!-- <div>
+			<div><a href='game_rank.php'>ÀüÃ¼¼øÀ§</a></div>
+			<div><a href='game_rank.php?b_category=%C0%FC%B7%AB%B0%D4%C0%D3&orderby=game_rank'>Àü·«°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%C3%DF%BB%F3%B0%D4%C0%D3&orderby=game_rank'>Ãß»ó°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%C4%C3%B7%BA%C5%CD%BA%ED%20%B0%D4%C0%D3&orderby=game_rank'>ÄÃ·ºÅÍºí°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%B0%A1%C1%B7%B0%D4%C0%D3&orderby=game_rank'>°¡Á·°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%BE%EE%B8%B0%C0%CC%B0%D4%C0%D3&orderby=game_rank'>¾î¸°ÀÌ°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%C6%C4%C6%BC%B0%D4%C0%D3&orderby=game_rank'>ÆÄÆ¼°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%C5%D7%B8%B6%B0%D4%C0%D3&orderby=game_rank'>Å×¸¶°ÔÀÓ</a></div>
+			<div><a href='game_rank.php?b_category=%C0%FC%C0%EF%B0%D4%C0%D3&orderby=game_rank'>¿ö°ÔÀÓ</a></div>
+			game_rank.php?b_category=%C7%D1%B1%DB%B0%D4%C0%D3&orderby=game_rank ÇÑ±Û°ÔÀÓ
+		</div> -->
+<!-- 
+{{ÂÊÁö·¹ÀÌ¾î} }
+{{°Ô½ÃÆÇ´ñ±Û¾Ë¸²} }
+
+{{cgialert} } -->

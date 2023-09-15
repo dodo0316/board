@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>:::보드 게임 홈페이지:::</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header>
+    <div style="text-align:left;">
+        <span id="clock" style="color:gray; font-size:20px;">clock</span>
+        <span id="apm" style="color:gray; font-size:7px;">ampm</span>
+    </div>
+    <script>
+         var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var AmPm ="AM";
+            if(hours > 12){   
+                var AmPm ="PM";
+                hours %= 12;
+            }
+
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+            Target_apm.innerText = `${AmPm}`;
+
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+        </script>
+    <section id="top">
+        <a id="logo" href="index.html"><img src="img/logo.gif"></a>
+        <div id="search">
+        <div id="search_title">SEARCH</div>
+        <div id="search_form"><input type="text"></div>
+        <div id="search_button"><img src="img/btn_search.gif"></div>
+    </div>
+    <nav id="top_menu">
+        <ul>
+            <li class="green"><a href="#">로그인</a></li>
+            <li class="green"><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav><!--top_menu-->
+    <div class="clear"></div>
+    </section><!--section top-->
+    <nav id="main_menu">
+        <ul>
+            <li><a href="#">게시판</a></li>
+            <li><a href="#">게임후기</a></li>
+            <li><a href="#">게임정보</a></li>
+            <li><a href="#">중고</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">데이터</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="main">
+    <section id="cat1">
+        <div id="cat_title">
+            게임 카테고리
+        </div>
+        <ul>
+            <li>중세 시대</li>
+            <li>여행</li>
+            <li>전쟁</li>
+            <li>마을</li>
+            <li>성 건설</li>
+            <li>판타지</li>
+            <li>RPG</li>
+            <li>일본풍</li>
+            <li>무역</li>
+            <li>크툴루</li>
+            <li>웨스턴</li>
+        </ul>
+        </section>
+    <section id="cat2">
+        <img src="img/main_img.gif">
+    </section>
+<section id="cat3">
+    <div id="latest_notice">
+        <ul>
+            <li>잠시후 서버작업 예정</li>
+            <li>금일 사이트 오류</li>
+            <li>보드라이프 앱 출시</li>
+            <li>금일 서버 점검</li>
+            <li>페이지 대규모 업데이트</li>
+            <li>금일 서버 점검</li>
+        </ul>
+    </div>
+    <div id="best_games">
+        <img src="img/best_games_img.gif">
+    </div>
+</section>
+<section id="open_shop">
+    <ul>
+        <li><img src="img/shop_game1.gif"></li>
+        <li><img src="img/shop_game2.gif"></li>
+    </ul>
+</section>
+<section id="Rank_game">
+    <div id="new">
+        <ul>
+            <li><img src="img/new_game1.gif"></li> <!-- 신작 게임이미지1-->
+            <li><img src="img/new_game2.gif"></li> <!-- 신작 게임이미지2-->
+        </ul>
+    </div>
+    <div id="best">
+        <ul>
+            <li><img src="img/best_game1.gif"></li> <!-- 베스트 게임이미지1-->
+            <li><img src="img/best_game2.gif"></li> <!-- 베스트 게임이미지2-->
+        </ul>
+    </div>
+    <div id="live">
+        <ul>
+            <li><img src="img/live_game1.gif"></li> <!-- 실시간 게임이미지1-->
+            <li><img src="img/live_game2.gif"></li> <!-- 실시간 게임이미지2-->
+        </ul>
+    </div>
+</section><!--신작,베스트,실시간 게임랭킹-->
+<section id ="new">
+    <h3><span>NEW ARRIVAL</span>신규상품</h3>
+    <div class="item">
+        <div>
+            <ul>
+            <li><img src="img/new.jpg"></li> <!--신작게임상품 이미지-->
+            <li class="subject">게임이름</li>
+            <li class="comment">게임설명</li>
+            <li class="price">99999원</li>
+            </ul>
+        </div>
+        <div class="item">
+            <ul>
+                <li><img src="img/new2.jpg"></li> <!--신작게임상품 이미지2-->
+            <li class="subject">게임이름</li>
+            <li class="comment">게임설명</li>
+            <li class="price">99999원</li>
+            </ul>
+        </div>
+        <div class="item">
+            <ul>
+                <li><img src="img/new3.jpg"></li> <!--신작게임상품 이미지3-->
+            <li class="subject">게임이름</li>
+            <li class="comment">게임설명</li>
+            <li class="price">99999원</li>
+            </ul>
+    </div>
+</section><!--신작게임상품-->
+</body>
+</html>
